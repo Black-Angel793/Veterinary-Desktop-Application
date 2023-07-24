@@ -28,7 +28,7 @@ namespace Veterinary.PL.Treatment
             dt1 = crud.list_consultations();
             if (dt1.Rows.Count > 0)
             {
-                DataGridView1.DataSource = dt1;
+                DataGridViewConsult.DataSource = dt1;
             }
             else
             {
@@ -45,7 +45,7 @@ namespace Veterinary.PL.Treatment
 
                 PL.Treatment.List list = new PL.Treatment.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -58,18 +58,18 @@ namespace Veterinary.PL.Treatment
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
-        private void DataGridView1_Click(object sender, EventArgs e)
+        private void DataGridViewConsult_Click(object sender, EventArgs e)
         {
-            if (DataGridView1.SelectedRows.Count > 1)
+            if (DataGridViewConsult.SelectedRows.Count > 1)
             {
                 MessageBox.Show("please select one row");
             }
             else
             {
-                id_c.Text = DataGridView1.CurrentRow.Cells[0].Value.ToString();
+                id_c.Text = DataGridViewConsult.CurrentRow.Cells[0].Value.ToString();
             }
         }
     }

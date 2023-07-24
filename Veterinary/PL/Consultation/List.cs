@@ -92,7 +92,7 @@ namespace Veterinary.PL.Consultation
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void refresh_Click(object sender, EventArgs e)
@@ -125,7 +125,7 @@ namespace Veterinary.PL.Consultation
         {
             PL.Consultation.Add h = new PL.Consultation.Add();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void appointbtn_Click(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace Veterinary.PL.Consultation
 
                 PL.Appointment.Home add = new PL.Appointment.Home();
                 add.Show();
-                this.Close();
+                Close();
             }
         }
 
@@ -156,7 +156,7 @@ namespace Veterinary.PL.Consultation
                 
                 PL.Treatment.Add add = new PL.Treatment.Add();
                 add.Show();
-                this.Close();
+                Close();
             }
         }
 
@@ -172,7 +172,7 @@ namespace Veterinary.PL.Consultation
 
                 PL.Surgery.Add add = new PL.Surgery.Add();
                 add.Show();
-                this.Close();
+                Close();
             }
         }
     }

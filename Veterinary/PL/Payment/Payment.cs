@@ -112,7 +112,7 @@ namespace Veterinary.PL.Payment
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewClient_Click(object sender, EventArgs e)

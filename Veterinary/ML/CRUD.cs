@@ -781,30 +781,34 @@ namespace Veterinary.ML
 
 
         //Order CRUD
-        public void insert_order(int ido, string products, string qt)
+        public void insert_order(int ido, string products, string qt,string cost)
         {
             DAL.DAL insert = new DAL.DAL();
-            SqlParameter[] param = new SqlParameter[3];
+            SqlParameter[] param = new SqlParameter[4];
             param[0] = new SqlParameter("@OwnerID", SqlDbType.Int);
             param[0].Value = ido;
             param[1] = new SqlParameter("@ProductIds", SqlDbType.VarChar, 50);
             param[1].Value = products;
             param[2] = new SqlParameter("@Quantities", SqlDbType.VarChar, 50);
             param[2].Value = qt;
+            param[3] = new SqlParameter("@Costs", SqlDbType.VarChar,50);
+            param[3].Value = cost;
             insert.open();
             insert.execop("InsertOrder", param);
             insert.close();
         }
-        public void update_order(int ido, string products, string qt)
+        public void update_order(int ido, string products, string qt, string cost)
         {
             DAL.DAL update = new DAL.DAL();
-            SqlParameter[] param = new SqlParameter[3];
+            SqlParameter[] param = new SqlParameter[4];
             param[0] = new SqlParameter("@OrderId", SqlDbType.Int);
             param[0].Value = ido;
             param[1] = new SqlParameter("@ProductIds", SqlDbType.VarChar, 50);
             param[1].Value = products;
             param[2] = new SqlParameter("@Quantities", SqlDbType.VarChar, 50);
             param[2].Value = qt;
+            param[3] = new SqlParameter("@Costs", SqlDbType.VarChar, 50);
+            param[3].Value = cost;
             update.open();
             update.execop("UpdateOrder", param);
             update.close();

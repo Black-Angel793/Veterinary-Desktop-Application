@@ -18,7 +18,6 @@ namespace Veterinary.PL.Surgery
         }
 
         ML.CRUD updt = new ML.CRUD();
-        DataTable dt = new DataTable();
 
         private void Update_Load(object sender, EventArgs e)
         {
@@ -37,7 +36,7 @@ namespace Veterinary.PL.Surgery
                 updt.update_surgery(int.Parse(id.Text), SDate.Text, ST.Text,SN.Text,AT.Text,notes.Text, int.Parse(id_c.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
-                this.Close();
+                Close();
             }
             catch (Exception ex)
             {
@@ -49,7 +48,7 @@ namespace Veterinary.PL.Surgery
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();    
         }
 
         private void DataGridViewconsult_Click(object sender, EventArgs e)

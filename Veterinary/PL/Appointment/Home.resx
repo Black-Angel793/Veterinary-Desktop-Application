@@ -141,20 +141,20 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Nextbtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACaSURBVHhe7dJBDYNAAABBqKFKQREXfFYGAiA9Dbe/eUyy
-        Anb7nOdvu64HVplP/eN7HLDMHMxYrGYsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwS
-        xiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBJzrH2MewYsso9x
-        v6shXDS/NMJzAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAGIAAAAnCAYAAAD0MJ3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACQSURBVGhD7dFBDYNAAABBqKFKQREXfFYGAiA9E7ePeUyy
+        /90+5/nbruthnfngH9/jYKE5xIj1jIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgw
+        IsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKIiDliH+OewTL7GPcL3e4KmvAU44sA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="Previousbtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACaSURBVHhe7dJBDYNAAABBqKFKQREXfFYGAiA9Dbe/eUyy
-        Anb7nOdvu64HVplP/eN7HLDMHMxYrGYsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwS
-        xiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBJzrH2MewYsso9x
-        v6shXDS/NMJzAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAGIAAAAnCAYAAAD0MJ3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACQSURBVGhD7dFBDYNAAABBqKFKQREXfFYGAiA9E7ePeUyy
+        /90+5/nbruthnfngH9/jYKE5xIj1jIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgw
+        IsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKIiDliH+OewTL7GPcL3e4KmvAU44sA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="MYL.BaseStylesheet" xml:space="preserve">
@@ -162,11 +162,11 @@
   </data>
   <data name="listbtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACaSURBVHhe7dJBDYNAAABBqKFKQREXfFYGAiA9Dbe/eUyy
-        Anb7nOdvu64HVplP/eN7HLDMHMxYrGYsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwS
-        xiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBJzrH2MewYsso9x
-        v6shXDS/NMJzAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAGIAAAAnCAYAAAD0MJ3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACQSURBVGhD7dFBDYNAAABBqKFKQREXfFYGAiA9E7ePeUyy
+        /90+5/nbruthnfngH9/jYKE5xIj1jIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgw
+        IsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKICCMijIgwIsKIiDliH+OewTL7GPcL3e4KmvAU44sA
+        AAAASUVORK5CYII=
 </value>
   </data>
 </root>

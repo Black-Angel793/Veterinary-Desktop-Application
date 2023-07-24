@@ -29,6 +29,7 @@ namespace Veterinary.PL.Purchase
 
         string productIds = string.Empty;
         string quantities = string.Empty;
+        string costs = string.Empty;
 
         decimal totalCost = 0;
 
@@ -36,7 +37,7 @@ namespace Veterinary.PL.Purchase
 
         private void Purchase_Load(object sender, EventArgs e)
         {
-            
+
             productTable.Columns.Add("Product ID", typeof(int));
             productTable.Columns.Add("Product Name", typeof(string));
             productTable.Columns.Add("Quantity", typeof(int));
@@ -141,45 +142,41 @@ namespace Veterinary.PL.Purchase
             int quantity = Convert.ToInt32(qt.Text);
             decimal productPrice = Convert.ToDecimal(price.Text);
             decimal cost = quantity * productPrice;
-
-            // Check if row for this ID is selected
-            int productId = (int)DataGridViewProducts.CurrentRow.Cells["Product ID"].Value;
-            bool isUpdate = productId != 0;
-            if (isUpdate)
-            {
-                productId = selectedProductId;
-
-            }
-            else
-            {
-                // No selection, add new row
-                productId = Convert.ToInt32(products.SelectedIndex ) + 1;
-            }
+            int productId;
 
             totalCost += cost;
 
             TotalCost.Text = totalCost.ToString();
 
-            DataColumn idColumn = productTable.Columns["Product ID"];
-            productTable.PrimaryKey = new DataColumn[] { idColumn };
-            DataRow row = productTable.Rows.Find(productId);
-
-            if (row != null)
+            if (DataGridViewProducts.SelectedRows.Count>0 && DataGridViewProducts.SelectedRows[0].Cells["Product ID"].Value != null)
             {
-                int currQty = row.Field<int>("Quantity");
-                currQty = quantity;
-                row["Quantity"] = currQty;
+                // Get ID from selected row
+                productId = (int)DataGridViewProducts.SelectedRows[0].Cells["Product ID"].Value;
 
-                float currCost = row.Field<float>("Cost");
-                currCost = ((float)cost);
-                row["Cost"] = currCost;
+                DataColumn idColumn = productTable.Columns["Product ID"];
+                productTable.PrimaryKey = new DataColumn[] { idColumn };
+                DataRow row = productTable.Rows.Find(productId);
+
+                if (row != null)
+                {
+                    int currQty = row.Field<int>("Quantity");
+                    currQty = quantity;
+                    row["Quantity"] = currQty;
+
+                    float currCost = row.Field<float>("Cost");
+                    currCost = ((float)cost);
+                    row["Cost"] = currCost;
+                }
             }
             else
             {
+                productId = Convert.ToInt32(products.SelectedIndex) + 1;
+
                 productTable.Rows.Add(productId, productName, quantity, productPrice, cost);
             }
-            // Refresh grid
-            DataGridViewProducts.DataSource = productTable;
+        
+        // Refresh grid
+        DataGridViewProducts.DataSource = productTable;
             DataGridViewProducts.Update();
             DataGridViewProducts.Refresh();
 
@@ -187,6 +184,7 @@ namespace Veterinary.PL.Purchase
             products.SelectedIndex = -1;
             qt.Clear();
             price.Clear();
+
         }
 
 
@@ -198,9 +196,11 @@ namespace Veterinary.PL.Purchase
                 {
                     string productId = row.Cells["Product ID"].Value.ToString();
                     string quantity = row.Cells["Quantity"].Value.ToString();
+                    decimal cost = Convert.ToDecimal(row.Cells["Cost"].Value.ToString());
 
                     productIds += productId + ",";
                     quantities += quantity + ",";
+                    costs += cost.ToString() + ",";
 
                 }
             }
@@ -210,10 +210,11 @@ namespace Veterinary.PL.Purchase
             {
                 productIds = productIds.TrimEnd(',');
                 quantities = quantities.TrimEnd(',');
+                costs = costs.TrimEnd(',');
 
                 try
                 {
-                    crud.insert_order(int.Parse(id_c.Text),productIds, quantities); 
+                    crud.insert_order(int.Parse(id_c.Text),productIds, quantities,costs); 
                     
                     MessageBox.Show("Order complete");
 
@@ -224,35 +225,6 @@ namespace Veterinary.PL.Purchase
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
-            }
-        }
-        private void DataGridViewResult_SelectionChanged(object sender, EventArgs e)
-        {
-            if (DataGridViewResult.SelectedRows != null && DataGridViewResult.SelectedRows.Count > 0)
-            {
-                // Get selected row
-                DataGridViewRow selectedRow = DataGridViewResult.SelectedRows[0];
-
-                // Get order id
-                int orderId = (int)selectedRow.Cells["Id_order"].Value;
-
-                // Query details
-                DataTable details = crud.GetOrderDetails(orderId);
-
-                // Populate product table 
-                productTable.Clear();
-                foreach (DataRow row1 in details.Rows)
-                {
-                    // Add product data to new row
-                    DataRow newRow = productTable.NewRow();
-                    newRow["Product ID"] = row1["Id_product"];
-                    newRow["Product Name"] = row1["Product_Name"];
-                    newRow["Quantity"] = row1["QT"];
-                    newRow["Price"] = row1["Price"];
-                    newRow["Cost"] = row1["Cost"];
-
-                    productTable.Rows.Add(newRow);
                 }
             }
         }
@@ -267,9 +239,11 @@ namespace Veterinary.PL.Purchase
                     {
                         string productId = row.Cells["Product ID"].Value.ToString();
                         string quantity = row.Cells["Quantity"].Value.ToString();
+                        decimal cost = Convert.ToDecimal(row.Cells["Cost"].Value.ToString());
 
                         productIds += productId + ",";
                         quantities += quantity + ",";
+                        costs += cost.ToString() + ",";
 
                     }
                 }
@@ -278,10 +252,11 @@ namespace Veterinary.PL.Purchase
                 {
                     productIds = productIds.TrimEnd(',');
                     quantities = quantities.TrimEnd(',');
+                    costs = costs.TrimEnd(',');
 
                     try
                     {
-                        crud.update_order(int.Parse(id_o.Text), productIds, quantities);
+                        crud.update_order(int.Parse(id_o.Text), productIds, quantities,costs);
 
                         MessageBox.Show("Order Updated");
 
@@ -321,7 +296,7 @@ namespace Veterinary.PL.Purchase
         {
             Form1 form = new Form1();
             form.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewProducts_Click(object sender, EventArgs e)
@@ -362,19 +337,121 @@ namespace Veterinary.PL.Purchase
             {
                 id_o.Text = DataGridViewResult.CurrentRow.Cells[0].Value.ToString();
                 id_c.Text = DataGridViewClient.CurrentRow.Cells[1].Value.ToString();
+
+                // Get selected row
+                DataGridViewRow selectedRow = DataGridViewResult.SelectedRows[0];
+
+                // Get order id
+                int orderId = (int)selectedRow.Cells["Id_order"].Value;
+
+                // Query details
+                DataTable details = crud.GetOrderDetails(orderId);
+
+                // Populate product table 
+                productTable.Clear();
+                foreach (DataRow row1 in details.Rows)
+                {
+                    // Add product data to new row
+                    DataRow newRow = productTable.NewRow();
+                    newRow["Product ID"] = row1["Id_product"];
+                    newRow["Product Name"] = row1["Product_Name"];
+                    newRow["Quantity"] = row1["QT"];
+                    newRow["Price"] = row1["Price"];
+                    newRow["Cost"] = row1["Cost"];
+
+                    productTable.Rows.Add(newRow);
+                }
             }
         }
 
-        private void me(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ml(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Check if row for this ID is selected
+//int? productId = (int?)DataGridViewProducts.CurrentRow?.Cells["Product ID"].Value;
+//bool isUpdate = productId != 0;
+//MessageBox.Show(isUpdate.ToString());
+//if (productId != null)
+//{
+//productId = selectedProductId;
+//}
+//else
+//{
+// No selection, add new row
+//int productId = Convert.ToInt32(products.SelectedIndex )+ 1;
+// }
+/* totalCost += cost;
+
+ TotalCost.Text = totalCost.ToString();
+
+ DataColumn idColumn = productTable.Columns["Product ID"];
+ productTable.PrimaryKey = new DataColumn[] { idColumn };
+ DataRow row = productTable.Rows.Find(productId);
+
+ if (row != null)
+ {
+     int currQty = row.Field<int>("Quantity");
+     currQty = quantity;
+     row["Quantity"] = currQty;
+
+     float currCost = row.Field<float>("Cost");
+     currCost = ((float)cost);
+     row["Cost"] = currCost;
+ }
+ else
+ {
+     productTable.Rows.Add(productId, productName, quantity, productPrice, cost);
+ }*/
+
+
+
+
+
+
+
+
+
+/*if (DataGridViewResult.SelectedRows != null && DataGridViewResult.SelectedRows.Count > 0)
+{
+    // Get selected row
+    DataGridViewRow selectedRow = DataGridViewResult.SelectedRows[0];
+
+    // Get order id
+    int orderId = (int)selectedRow.Cells["Id_order"].Value;
+
+    // Query details
+    DataTable details = crud.GetOrderDetails(orderId);
+
+    // Populate product table 
+    productTable.Clear();
+    foreach (DataRow row1 in details.Rows)
+    {
+        // Add product data to new row
+        DataRow newRow = productTable.NewRow();
+        newRow["Product ID"] = row1["Id_product"];
+        newRow["Product Name"] = row1["Product_Name"];
+        newRow["Quantity"] = row1["QT"];
+        newRow["Price"] = row1["Price"];
+        newRow["Cost"] = row1["Cost"];
+
+        productTable.Rows.Add(newRow);
+    }
+}*/

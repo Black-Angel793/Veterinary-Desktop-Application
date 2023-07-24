@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -59,7 +60,12 @@ namespace Veterinary.PL.Animal
 
         private void updatebtn_Click(object sender, EventArgs e)
         {
-            string location = "W:\\Veterinary\\Images";
+            string location = ConfigurationManager.AppSettings["ImageLocation"];
+
+            if (!Directory.Exists(location))
+            {
+                Directory.CreateDirectory(location);
+            }
             string path = Path.Combine(location, AN.Text + ".jpg");
             try
             {

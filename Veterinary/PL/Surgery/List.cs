@@ -91,7 +91,7 @@ namespace Veterinary.PL.Surgery
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void search_TextChange(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Veterinary.PL.Surgery
         {
             PL.Surgery.Add add = new PL.Surgery.Add();
             add.Show();
-            this.Close();
+            Close();
         }
     }
 }

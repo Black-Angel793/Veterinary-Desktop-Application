@@ -37,7 +37,7 @@ namespace Veterinary.PL.Store
                 crud.update_product(int.Parse(idp.Text), pn.Text, int.Parse(qts.Text),float.Parse(price.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
-                this.Close();
+                Close();
             }
             catch (Exception ex)
             {
@@ -49,7 +49,7 @@ namespace Veterinary.PL.Store
         {
             PL.Store.List list = new PL.Store.List();
             list.Show();
-            this.Close();
+            Close();
         }
     }
 }

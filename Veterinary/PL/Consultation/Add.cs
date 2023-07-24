@@ -70,7 +70,7 @@ namespace Veterinary.PL.Consultation
 
                 PL.Consultation.List list = new PL.Consultation.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -83,7 +83,7 @@ namespace Veterinary.PL.Consultation
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewAnimal_Click(object sender, EventArgs e)

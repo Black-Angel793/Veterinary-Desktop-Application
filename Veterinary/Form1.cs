@@ -45,63 +45,63 @@ namespace Veterinary
         {
             PL.Owner.List home = new PL.Owner.List();
             home.Show();
-            this.Hide();
+            Hide();
         }
 
         private void animalbtn_Click(object sender, EventArgs e)
         {
             PL.Animal.List home = new PL.Animal.List();
             home.Show();
-            this.Hide();
+            Hide();
         }
 
         private void appointmentbtn_Click(object sender, EventArgs e)
         {
             PL.Appointment.Home home = new PL.Appointment.Home();
             home.Show();
-            this.Hide();
+            Hide();
         }
 
         private void consultationbtn_Click(object sender, EventArgs e)
         {
             PL.Consultation.List list = new PL.Consultation.List();
             list.Show();
-            this.Hide();
+            Hide();
         }
 
         private void paymentbtn_Click(object sender, EventArgs e)
         {
             PL.Payment.Payment payment = new PL.Payment.Payment();
             payment.Show(); 
-            this.Hide();
+            Hide();
         }
 
         private void storebtn_Click(object sender, EventArgs e)
         {
             PL.Store.List list = new PL.Store.List();
             list.Show();
-            this.Hide();
+            Hide();
         }
 
         private void ordersbtn_Click(object sender, EventArgs e)
         {
             PL.Purchase.Purchase purchase = new PL.Purchase.Purchase();
             purchase.Show();
-            this.Hide();
+            Hide();
         }
 
         private void pensbtn_Click(object sender, EventArgs e)
         {
             PL.Pens.Pens pens = new PL.Pens.Pens();
             pens.Show();
-            this.Hide();
+            Hide();
         }
 
         private void treatmentbtn_Click(object sender, EventArgs e)
         {
             PL.Treatment.List list = new PL.Treatment.List();
             list.Show();
-            this.Hide();
+            Hide();
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace Veterinary
         {
             PL.Medication.List list = new PL.Medication.List(); 
             list.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

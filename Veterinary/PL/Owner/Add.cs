@@ -33,7 +33,7 @@ namespace Veterinary.PL.Owner
 
                 PL.Owner.List list = new PL.Owner.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -46,7 +46,7 @@ namespace Veterinary.PL.Owner
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void LN_TextChanged(object sender, EventArgs e)

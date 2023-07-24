@@ -27,7 +27,7 @@ namespace Veterinary.PL.Appointment
         public static string ET;
         public static string Res;
         public static string Not;
-        public static string client;
+        public static string consult;
 
         private void List_Load(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace Veterinary.PL.Appointment
                 DGVappoint.Columns[3].HeaderText = "End Time";
                 DGVappoint.Columns[4].HeaderText = "Reason";
                 DGVappoint.Columns[5].HeaderText = "Notes";
-                DGVappoint.Columns[6].HeaderText = "Client";
+                DGVappoint.Columns[6].HeaderText = "Consultation ID";
             }
             else
             {
@@ -63,7 +63,7 @@ namespace Veterinary.PL.Appointment
                 ET = DGVappoint.CurrentRow.Cells[3].Value.ToString();
                 Res = DGVappoint.CurrentRow.Cells[4].Value.ToString();
                 Not = DGVappoint.CurrentRow.Cells[5].Value.ToString();
-                client = DGVappoint.CurrentRow.Cells[6].Value.ToString();
+                consult = DGVappoint.CurrentRow.Cells[6].Value.ToString();
 
                 PL.Appointment.Update u = new PL.Appointment.Update();
                 u.Show();
@@ -80,7 +80,7 @@ namespace Veterinary.PL.Appointment
             {
                 id = DGVappoint.CurrentRow.Cells[0].Value.ToString();
                 AD = DGVappoint.CurrentRow.Cells[1].Value.ToString();
-                client = DGVappoint.CurrentRow.Cells[6].Value.ToString();
+                consult = DGVappoint.CurrentRow.Cells[6].Value.ToString();
 
                 PL.Appointment.Delete u = new PL.Appointment.Delete();
                 u.Show();
@@ -104,7 +104,7 @@ namespace Veterinary.PL.Appointment
         {
             PL.Appointment.Home h = new PL.Appointment.Home();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void search_TextChange(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Veterinary.PL.Appointment
         {
             PL.Appointment.Home h = new PL.Appointment.Home();
             h.Show();
-            this.Close();
+            Close();
         }
     }
 }

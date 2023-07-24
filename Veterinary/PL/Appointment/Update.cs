@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Veterinary.ML;
 
 namespace Veterinary.PL.Appointment
 {
@@ -23,13 +24,23 @@ namespace Veterinary.PL.Appointment
 
         private void Update_Load(object sender, EventArgs e)
         {
+            dt = updt.list_consultations();
+            if (dt.Rows.Count > 0)
+            {
+                DataGridViewConsult.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("list vide");
+            }
+
             id.Text = List.id;
             ADate.Text = List.AD;
             ST.Text = List.ST;
             ET.Text = List.ET;
             Reason.Text = List.Res;
             Notes.Text = List.Not;
-            client.Text = List.client;
+            id_c.Text = List.consult;
         }
 
         private void Updatebtn_Click(object sender, EventArgs e)
@@ -37,7 +48,7 @@ namespace Veterinary.PL.Appointment
             try
             {
                 updt.update_appointment(int.Parse(id.Text), ADate.Text, ST.Text,
-                    ET.Text, Reason.Text, Notes.Text, int.Parse(client.Text));
+                    ET.Text, Reason.Text, Notes.Text, int.Parse(id_c.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
                 this.Close();
@@ -53,6 +64,18 @@ namespace Veterinary.PL.Appointment
             PL.Appointment.Home home = new PL.Appointment.Home();
             home.Show();
             this.Close();
+        }
+
+        private void DataGridViewConsult_Click(object sender, EventArgs e)
+        {
+            if (DataGridViewConsult.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("please select one row");
+            }
+            else
+            {
+                id_c.Text = DataGridViewConsult.CurrentRow.Cells[0].Value.ToString();
+            }
         }
     }
 }

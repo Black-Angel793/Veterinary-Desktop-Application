@@ -67,6 +67,7 @@
             this.id_c = new Bunifu.UI.WinForms.BunifuTextBox();
             this.DataGridViewconsult = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -761,13 +762,30 @@
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuLabel11
+            // 
+            this.bunifuLabel11.AllowParentOverrides = false;
+            this.bunifuLabel11.AutoEllipsis = false;
+            this.bunifuLabel11.CursorType = null;
+            this.bunifuLabel11.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel11.Location = new System.Drawing.Point(464, 11);
+            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel11.Name = "bunifuLabel11";
+            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel11.Size = new System.Drawing.Size(258, 53);
+            this.bunifuLabel11.TabIndex = 46;
+            this.bunifuLabel11.Text = "add Surgery";
+            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Add
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1215, 1020);
+            this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.DataGridViewconsult);
             this.Controls.Add(this.bunifuLabel9);
             this.Controls.Add(this.Return);
@@ -822,5 +840,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox id_c;
         private Bunifu.UI.WinForms.BunifuDataGridView DataGridViewconsult;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
     }
 }

@@ -93,7 +93,7 @@ namespace Veterinary.PL.Owner
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void search_TextChange(object sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace Veterinary.PL.Owner
         {
             PL.Owner.Add h = new PL.Owner.Add();
             h.Show();
-            this.Close();
+            Close();
         }
     }
 }

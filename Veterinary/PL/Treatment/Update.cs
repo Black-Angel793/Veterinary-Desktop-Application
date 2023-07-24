@@ -48,7 +48,7 @@ namespace Veterinary.PL.Treatment
                 updt.update_treatment(int.Parse(id.Text), SDate.Text, EDate.Text,Inst.Text, Notes.Text, int.Parse(id_c.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
-                this.Close();
+                Close();
             }
             catch (Exception ex)
             {
@@ -60,7 +60,7 @@ namespace Veterinary.PL.Treatment
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewConsult_Click(object sender, EventArgs e)

@@ -22,7 +22,7 @@ namespace Veterinary.PL.Appointment
         {
             id.Text = List.id;
             AD.Text = List.AD;
-            client.Text = List.client;
+            client.Text = List.consult;
         }
 
         private void yes_Click(object sender, EventArgs e)

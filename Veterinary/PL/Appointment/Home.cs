@@ -69,14 +69,14 @@ namespace Veterinary.PL.Appointment
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Close();
+            Close();
         }
 
         private void listbtn_Click(object sender, EventArgs e)
         {
             PL.Appointment.List list = new PL.Appointment.List();
             list.Show();
-            this.Close();
+            Close();
         }
 
         private void Previousbtn_Click(object sender, EventArgs e)

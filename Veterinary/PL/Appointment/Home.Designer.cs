@@ -222,7 +222,7 @@
             this.Nextbtn.IdleIconLeftImage = null;
             this.Nextbtn.IdleIconRightImage = null;
             this.Nextbtn.IndicateFocus = false;
-            this.Nextbtn.Location = new System.Drawing.Point(1208, 1354);
+            this.Nextbtn.Location = new System.Drawing.Point(1286, 15);
             this.Nextbtn.Name = "Nextbtn";
             this.Nextbtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Nextbtn.OnDisabledState.BorderRadius = 1;
@@ -256,7 +256,7 @@
             this.Nextbtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Nextbtn.OnPressedState.IconLeftImage = null;
             this.Nextbtn.OnPressedState.IconRightImage = null;
-            this.Nextbtn.Size = new System.Drawing.Size(150, 39);
+            this.Nextbtn.Size = new System.Drawing.Size(98, 39);
             this.Nextbtn.TabIndex = 3;
             this.Nextbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Nextbtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -312,7 +312,7 @@
             this.Previousbtn.IdleIconLeftImage = null;
             this.Previousbtn.IdleIconRightImage = null;
             this.Previousbtn.IndicateFocus = false;
-            this.Previousbtn.Location = new System.Drawing.Point(1041, 1354);
+            this.Previousbtn.Location = new System.Drawing.Point(1166, 15);
             this.Previousbtn.Name = "Previousbtn";
             this.Previousbtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Previousbtn.OnDisabledState.BorderRadius = 1;
@@ -346,7 +346,7 @@
             this.Previousbtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Previousbtn.OnPressedState.IconLeftImage = null;
             this.Previousbtn.OnPressedState.IconRightImage = null;
-            this.Previousbtn.Size = new System.Drawing.Size(150, 39);
+            this.Previousbtn.Size = new System.Drawing.Size(98, 39);
             this.Previousbtn.TabIndex = 3;
             this.Previousbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Previousbtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -420,7 +420,7 @@
             this.listbtn.IdleIconLeftImage = null;
             this.listbtn.IdleIconRightImage = null;
             this.listbtn.IndicateFocus = false;
-            this.listbtn.Location = new System.Drawing.Point(869, 1354);
+            this.listbtn.Location = new System.Drawing.Point(1041, 15);
             this.listbtn.Name = "listbtn";
             this.listbtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.listbtn.OnDisabledState.BorderRadius = 1;
@@ -454,7 +454,7 @@
             this.listbtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.listbtn.OnPressedState.IconLeftImage = null;
             this.listbtn.OnPressedState.IconRightImage = null;
-            this.listbtn.Size = new System.Drawing.Size(150, 39);
+            this.listbtn.Size = new System.Drawing.Size(98, 39);
             this.listbtn.TabIndex = 3;
             this.listbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.listbtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -478,8 +478,7 @@
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(153)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1415, 1424);

@@ -80,7 +80,7 @@
             this.search.IconRight = null;
             this.search.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.search.Lines = new string[0];
-            this.search.Location = new System.Drawing.Point(972, 17);
+            this.search.Location = new System.Drawing.Point(1264, 17);
             this.search.MaxLength = 32767;
             this.search.MinimumSize = new System.Drawing.Size(0, 2);
             this.search.Modified = false;
@@ -140,14 +140,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1268, 89);
+            this.panel1.Size = new System.Drawing.Size(1574, 89);
             this.panel1.TabIndex = 3;
             // 
             // refresh
             // 
             this.refresh.BackgroundImage = global::Veterinary.Properties.Resources.reload;
             this.refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.refresh.Location = new System.Drawing.Point(736, 20);
+            this.refresh.Location = new System.Drawing.Point(1150, 20);
             this.refresh.Name = "refresh";
             this.refresh.Size = new System.Drawing.Size(58, 54);
             this.refresh.TabIndex = 2;
@@ -212,7 +212,7 @@
             this.deletebtn.IdleIconLeftImage = null;
             this.deletebtn.IdleIconRightImage = null;
             this.deletebtn.IndicateFocus = false;
-            this.deletebtn.Location = new System.Drawing.Point(434, 17);
+            this.deletebtn.Location = new System.Drawing.Point(526, 17);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.deletebtn.OnDisabledState.BorderRadius = 35;
@@ -302,7 +302,7 @@
             this.Addbtn.IdleIconLeftImage = null;
             this.Addbtn.IdleIconRightImage = null;
             this.Addbtn.IndicateFocus = false;
-            this.Addbtn.Location = new System.Drawing.Point(105, 17);
+            this.Addbtn.Location = new System.Drawing.Point(197, 17);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Addbtn.OnDisabledState.BorderRadius = 35;
@@ -392,7 +392,7 @@
             this.updatebtn.IdleIconLeftImage = null;
             this.updatebtn.IdleIconRightImage = null;
             this.updatebtn.IndicateFocus = false;
-            this.updatebtn.Location = new System.Drawing.Point(264, 17);
+            this.updatebtn.Location = new System.Drawing.Point(356, 17);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.updatebtn.OnDisabledState.BorderRadius = 35;
@@ -442,6 +442,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.DGVanimal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVanimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVanimal.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGVanimal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(153)))));
             this.DGVanimal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVanimal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -488,22 +489,22 @@
             this.DGVanimal.HeaderBackColor = System.Drawing.Color.Teal;
             this.DGVanimal.HeaderBgColor = System.Drawing.Color.Empty;
             this.DGVanimal.HeaderForeColor = System.Drawing.Color.White;
-            this.DGVanimal.Location = new System.Drawing.Point(0, 93);
+            this.DGVanimal.Location = new System.Drawing.Point(0, 95);
             this.DGVanimal.Name = "DGVanimal";
             this.DGVanimal.RowHeadersVisible = false;
             this.DGVanimal.RowHeadersWidth = 82;
             this.DGVanimal.RowTemplate.Height = 40;
             this.DGVanimal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVanimal.Size = new System.Drawing.Size(1268, 762);
+            this.DGVanimal.Size = new System.Drawing.Size(1574, 888);
             this.DGVanimal.TabIndex = 4;
             this.DGVanimal.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Teal;
             // 
             // List
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1268, 855);
+            this.ClientSize = new System.Drawing.Size(1574, 983);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DGVanimal);
             this.DoubleBuffered = true;

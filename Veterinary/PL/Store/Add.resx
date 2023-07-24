@@ -218,4 +218,7 @@
         8IayDNxQDvQmVTU406Dumsn8C8rKn2syIdyqAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bunifuLabel11.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Britannic Bold'; font-size: 24pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
 </root>

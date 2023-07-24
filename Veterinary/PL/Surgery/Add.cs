@@ -46,7 +46,7 @@ namespace Veterinary.PL.Surgery
 
                 PL.Surgery.List list = new PL.Surgery.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -59,7 +59,7 @@ namespace Veterinary.PL.Surgery
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewconsult_Click(object sender, EventArgs e)

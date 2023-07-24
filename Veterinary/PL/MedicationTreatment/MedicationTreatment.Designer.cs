@@ -64,6 +64,7 @@
             this.addbtn = new System.Windows.Forms.PictureBox();
             this.DataGridViewResult = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Return = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewMedications)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTreatments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deletebtn)).BeginInit();
@@ -123,7 +124,7 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(127, 139);
+            this.bunifuLabel2.Location = new System.Drawing.Point(127, 123);
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -231,7 +232,8 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.DataGridViewMedications.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridViewMedications.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DataGridViewMedications.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewMedications.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridViewMedications.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewMedications.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewMedications.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewMedications.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -311,7 +313,8 @@
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.DataGridViewTreatments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridViewTreatments.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DataGridViewTreatments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewTreatments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridViewTreatments.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewTreatments.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewTreatments.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewTreatments.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -391,7 +394,7 @@
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel9.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel9.Location = new System.Drawing.Point(1159, 138);
+            this.bunifuLabel9.Location = new System.Drawing.Point(1158, 123);
             this.bunifuLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -408,7 +411,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel5.Location = new System.Drawing.Point(847, 139);
+            this.bunifuLabel5.Location = new System.Drawing.Point(845, 123);
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -636,7 +639,8 @@
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
             this.DataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.DataGridViewResult.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DataGridViewResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridViewResult.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewResult.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -705,13 +709,30 @@
             this.Return.TabStop = false;
             this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
+            // bunifuLabel11
+            // 
+            this.bunifuLabel11.AllowParentOverrides = false;
+            this.bunifuLabel11.AutoEllipsis = false;
+            this.bunifuLabel11.CursorType = null;
+            this.bunifuLabel11.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel11.Location = new System.Drawing.Point(554, 28);
+            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel11.Name = "bunifuLabel11";
+            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel11.Size = new System.Drawing.Size(456, 53);
+            this.bunifuLabel11.TabIndex = 65;
+            this.bunifuLabel11.Text = "Treatment Medication";
+            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // MedicationTreatment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1528, 1213);
+            this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.deletebtn);
@@ -766,5 +787,6 @@
         private System.Windows.Forms.PictureBox addbtn;
         private Bunifu.UI.WinForms.BunifuDataGridView DataGridViewResult;
         private System.Windows.Forms.PictureBox Return;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
     }
 }

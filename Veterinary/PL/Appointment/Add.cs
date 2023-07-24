@@ -22,7 +22,6 @@ namespace Veterinary.PL.Appointment
         }
 
         ML.CRUD crud = new ML.CRUD();
-        DataTable dt_owner = new DataTable();
         DataTable dt1 = new DataTable();
 
         private void Add_Load(object sender, EventArgs e)
@@ -52,7 +51,7 @@ namespace Veterinary.PL.Appointment
 
                 PL.Appointment.Home list = new PL.Appointment.Home();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -66,7 +65,7 @@ namespace Veterinary.PL.Appointment
         {
             PL.Appointment.Home home = new PL.Appointment.Home();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void ET_TextChanged(object sender, EventArgs e)

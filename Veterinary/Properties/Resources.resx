@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="medical-history-pills" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medical-history-pills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="female-doctor-and-male-doctor-standing-together" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\female-doctor-and-male-doctor-standing-together.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-closed-eye-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-closed-eye-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +142,8 @@
   <data name="icons8-petshop-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-petshop-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3d-fluency-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3d-fluency-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-vet-consultation-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-vet-consultation-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +156,9 @@
   </data>
   <data name="desktop___1 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\desktop___1 (2).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="white-blue-capsule" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white-blue-capsule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,20 +178,20 @@
   <data name="icons8-treatment-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-treatment-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="veterinarian-doctor-checking-dog-with-stethoscope" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinarian-doctor-checking-dog-with-stethoscope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blue-pill-package" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-pill-package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top-view-stethoscope-with-paper-bone-paw-print-animal-day" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top-view-stethoscope-with-paper-bone-paw-print-animal-day.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-surgery-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-surgery-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="desktop___1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\desktop___1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background_3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blue-desk-calendar-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-desk-calendar-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-medication-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-medication-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lying-cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lying-cat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +214,11 @@
   <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medical-history-pills" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medical-history-pills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-closed-eye-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-closed-eye-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-close-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-close-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,12 +244,6 @@
   <data name="woman-sitting-on-ground-and-petting-dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\woman-sitting-on-ground-and-petting-dog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat-standing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat-standing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-appointments-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-appointments-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-order-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-order-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -259,11 +259,11 @@
   <data name="icons8-money-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-money-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blue-desk-calendar-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blue-desk-calendar-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3d-fluency-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3d-fluency-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3d-fluency-restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3d-fluency-restart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-appointment-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-appointment-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,8 +271,8 @@
   <data name="white-dog-standing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white-dog-standing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="purple-blue-capsule-with-granules" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\purple-blue-capsule-with-granules.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="client  with dog 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\client  with dog 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,17 +280,23 @@
   <data name="doctors-bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doctors-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-pet-carrier-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-pet-carrier-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="veterinarian-doctor-checking-dog-with-stethoscope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinarian-doctor-checking-dog-with-stethoscope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-pet-carrier-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-pet-carrier-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-closed-eye-80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-closed-eye-80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="man-sitting-on-sofa-with-cat-next-to-him" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\man-sitting-on-sofa-with-cat-next-to-him.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-surgery-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-surgery-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="group_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\group_3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +316,8 @@
   <data name="3d-fluency-cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3d-fluency-cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3d-fluency-restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3d-fluency-restart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat-standing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat-standing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,11 +334,11 @@
   <data name="beagle-dog-sitting-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beagle-dog-sitting-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="client  with dog 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\client  with dog 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="purple-blue-capsule-with-granules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purple-blue-capsule-with-granules.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-appointments-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-appointments-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3d-business-credit-card-terminal-pay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3d-business-credit-card-terminal-pay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,10 +346,7 @@
   <data name="reload1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blue-pill-package" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blue-pill-package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-medication-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-medication-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="client  with dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\client  with dog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

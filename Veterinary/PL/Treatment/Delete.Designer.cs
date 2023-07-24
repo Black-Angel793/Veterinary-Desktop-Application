@@ -60,7 +60,7 @@
             this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Azure;
             this.bunifuLabel1.Location = new System.Drawing.Point(46, 69);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(810, 49);
@@ -117,7 +117,7 @@
             this.no.IdleIconRightImage = null;
             this.no.IndicateFocus = false;
             this.no.Location = new System.Drawing.Point(482, 266);
-            this.no.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.no.Margin = new System.Windows.Forms.Padding(2);
             this.no.Name = "no";
             this.no.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.no.OnDisabledState.BorderRadius = 50;
@@ -208,7 +208,7 @@
             this.yes.IdleIconRightImage = null;
             this.yes.IndicateFocus = false;
             this.yes.Location = new System.Drawing.Point(219, 266);
-            this.yes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yes.Margin = new System.Windows.Forms.Padding(2);
             this.yes.Name = "yes";
             this.yes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.yes.OnDisabledState.BorderRadius = 50;
@@ -279,7 +279,7 @@
             this.consultid.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.consultid.Lines = new string[0];
             this.consultid.Location = new System.Drawing.Point(596, 162);
-            this.consultid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.consultid.Margin = new System.Windows.Forms.Padding(2);
             this.consultid.MaxLength = 32767;
             this.consultid.MinimumSize = new System.Drawing.Size(1, 1);
             this.consultid.Modified = false;
@@ -305,7 +305,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.consultid.OnIdleState = stateProperties4;
-            this.consultid.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.consultid.Padding = new System.Windows.Forms.Padding(2);
             this.consultid.PasswordChar = '\0';
             this.consultid.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.consultid.PlaceholderText = "Consultation Id";
@@ -354,7 +354,7 @@
             this.AD.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AD.Lines = new string[0];
             this.AD.Location = new System.Drawing.Point(327, 162);
-            this.AD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AD.Margin = new System.Windows.Forms.Padding(2);
             this.AD.MaxLength = 32767;
             this.AD.MinimumSize = new System.Drawing.Size(1, 1);
             this.AD.Modified = false;
@@ -380,7 +380,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AD.OnIdleState = stateProperties8;
-            this.AD.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AD.Padding = new System.Windows.Forms.Padding(2);
             this.AD.PasswordChar = '\0';
             this.AD.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.AD.PlaceholderText = "Treatment Date";
@@ -429,7 +429,7 @@
             this.id.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.id.Lines = new string[0];
             this.id.Location = new System.Drawing.Point(56, 162);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.MaxLength = 32767;
             this.id.MinimumSize = new System.Drawing.Size(1, 1);
             this.id.Modified = false;
@@ -455,7 +455,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.id.OnIdleState = stateProperties12;
-            this.id.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Padding = new System.Windows.Forms.Padding(2);
             this.id.PasswordChar = '\0';
             this.id.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.id.PlaceholderText = "ID";
@@ -478,8 +478,7 @@
             // 
             // Delete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(914, 402);
@@ -491,7 +490,7 @@
             this.Controls.Add(this.bunifuLabel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Delete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete";

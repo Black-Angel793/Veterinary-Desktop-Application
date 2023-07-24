@@ -273,6 +273,16 @@ namespace Veterinary.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap client__with_dog {
+            get {
+                object obj = ResourceManager.GetObject("client  with dog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap client__with_dog_1 {
             get {
                 object obj = ResourceManager.GetObject("client  with dog 1", resourceCulture);

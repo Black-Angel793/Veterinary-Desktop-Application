@@ -24,7 +24,7 @@ namespace Veterinary.PL.Account
         public static string un;
 
         private void Login_Load(object sender, EventArgs e)
-        {
+        {            
             password.UseSystemPasswordChar = true;
         }
 

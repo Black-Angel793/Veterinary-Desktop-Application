@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -29,6 +30,14 @@ namespace Veterinary.PL.Animal
         DataTable dt_owner = new DataTable();
         private void Add_Load(object sender, EventArgs e)
         {
+            int intX = Screen.PrimaryScreen.Bounds.Width;
+            int intY = Screen.PrimaryScreen.Bounds.Height;
+            if (intX < this.Width)
+                this.Width = intX;
+            if (intY < this.Height)
+                this.Height = intY;
+
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
 
             // Display the names in the CheckedListBox
             dt_owner = crud.OwnersName();
@@ -41,7 +50,13 @@ namespace Veterinary.PL.Animal
         {
             try
             {
-                string location = "W:\\Veterinary\\Images";
+                string location = ConfigurationManager.AppSettings["ImageLocation"];
+
+                if (!Directory.Exists(location))
+                {
+                    Directory.CreateDirectory(location);
+                }
+
                 string path = Path.Combine(location, AN.Text + ".jpg");
                 
                 crud.insert_animal(AN.Text, Species.Text,breed.Text,DateTime.Parse(Birthdate.Text),sex.Text, color.Text,float.Parse(weight.Text), MC.Text,VS.Text,path,(int)owner.SelectedValue);
@@ -53,7 +68,7 @@ namespace Veterinary.PL.Animal
 
                 PL.Animal.List list = new PL.Animal.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -118,7 +133,7 @@ namespace Veterinary.PL.Animal
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
     }
 }

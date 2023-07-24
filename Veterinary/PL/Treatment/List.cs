@@ -88,7 +88,7 @@ namespace Veterinary.PL.Treatment
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void refresh_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace Veterinary.PL.Treatment
         {
             PL.Treatment.Add h = new PL.Treatment.Add();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void tretmedbtn_Click(object sender, EventArgs e)
@@ -136,7 +136,7 @@ namespace Veterinary.PL.Treatment
 
                 PL.MedicationTreatment.MedicationTreatment medicationTreatment = new MedicationTreatment.MedicationTreatment();
                 medicationTreatment.Show();
-                this.Close();
+                Close();
             }
             
         }

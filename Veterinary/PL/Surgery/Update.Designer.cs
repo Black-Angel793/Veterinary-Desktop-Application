@@ -73,6 +73,7 @@
             this.notes = new Bunifu.UI.WinForms.BunifuTextBox();
             this.SN = new Bunifu.UI.WinForms.BunifuTextBox();
             this.ST = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -861,13 +862,30 @@
             this.ST.UseSystemPasswordChar = false;
             this.ST.WordWrap = true;
             // 
+            // bunifuLabel11
+            // 
+            this.bunifuLabel11.AllowParentOverrides = false;
+            this.bunifuLabel11.AutoEllipsis = false;
+            this.bunifuLabel11.CursorType = null;
+            this.bunifuLabel11.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel11.Location = new System.Drawing.Point(459, 22);
+            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel11.Name = "bunifuLabel11";
+            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel11.Size = new System.Drawing.Size(326, 53);
+            this.bunifuLabel11.TabIndex = 79;
+            this.bunifuLabel11.Text = "Update Surgery";
+            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Update
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1234, 1120);
+            this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.AT);
             this.Controls.Add(this.SDate);
             this.Controls.Add(this.bunifuLabel7);
@@ -926,5 +944,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox notes;
         private Bunifu.UI.WinForms.BunifuTextBox SN;
         private Bunifu.UI.WinForms.BunifuTextBox ST;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
     }
 }

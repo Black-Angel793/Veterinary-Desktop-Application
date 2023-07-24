@@ -237,7 +237,7 @@ namespace Veterinary.PL.MedicationTreatment
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewResult_Click(object sender, EventArgs e)

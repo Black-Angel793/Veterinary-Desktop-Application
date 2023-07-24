@@ -95,7 +95,7 @@ namespace Veterinary.PL.Medication
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void search_TextChange(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace Veterinary.PL.Medication
         {
             PL.Medication.Add h = new PL.Medication.Add();
             h.Show();
-            this.Close();
+            Close();
         }
     }
 }

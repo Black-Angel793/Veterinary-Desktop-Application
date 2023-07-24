@@ -30,13 +30,20 @@ namespace Veterinary.PL.Medication
 
                 PL.Medication.List list = new PL.Medication.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            Close();
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Veterinary.PL.Store
         {
             PL.Store.Add add = new PL.Store.Add();
             add.Show();
-            this.Hide();
+            Close();
         }
 
         private void updatebtn_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace Veterinary.PL.Store
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void refresh_Click(object sender, EventArgs e)

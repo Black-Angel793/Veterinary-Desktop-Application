@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Veterinary.ML;
 //using static TheArtOfDev.HtmlRenderer.Adapters.RGraphicsPath;
 
 namespace Veterinary.PL.Consultation
@@ -22,6 +23,7 @@ namespace Veterinary.PL.Consultation
 
         ML.CRUD updt = new ML.CRUD();
         DataTable dt = new DataTable();
+        DataTable dt_ct = new DataTable();
 
         private void Update_Load(object sender, EventArgs e)
         {
@@ -32,6 +34,12 @@ namespace Veterinary.PL.Consultation
             diagnosis.Text = List.Diagn;
             id_a.Text = List.animal;
             conType.Text = List.conType;
+
+            dt_ct = updt.list_consultType();
+            foreach (DataRow dr in dt_ct.Rows)
+            {
+                conType.Items.Add(dr["Name_T"].ToString());
+            }
         }
         private void updatebtn_Click(object sender, EventArgs e)
         {
@@ -40,7 +48,7 @@ namespace Veterinary.PL.Consultation
                 updt.update_consultation(int.Parse(id.Text), ConDate.Text, ConTime.Text, observation.Text, diagnosis.Text, int.Parse(id_a.Text),int.Parse(conType.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
-                this.Close();
+                Close();
             }
             catch (Exception ex)
             {
@@ -52,7 +60,7 @@ namespace Veterinary.PL.Consultation
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewAnimal_Click(object sender, EventArgs e)

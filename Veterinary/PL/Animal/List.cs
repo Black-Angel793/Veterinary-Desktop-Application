@@ -136,7 +136,7 @@ namespace Veterinary.PL.Animal
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
 
         private void refresh_Click(object sender, EventArgs e)
@@ -174,7 +174,7 @@ namespace Veterinary.PL.Animal
         {
             PL.Animal.Add add = new PL.Animal.Add();
             add.Show();
-            this.Close();
+            Close();
         }
     }
 }

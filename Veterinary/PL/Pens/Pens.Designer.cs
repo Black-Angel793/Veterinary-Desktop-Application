@@ -71,6 +71,7 @@
             this.id_p = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Return = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewAnimal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewPens)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deletebtn)).BeginInit();
@@ -85,7 +86,8 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.DataGridViewAnimal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridViewAnimal.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewAnimal.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewAnimal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewAnimal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -181,7 +183,8 @@
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.DataGridViewPens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DataGridViewPens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewPens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridViewPens.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewPens.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewPens.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewPens.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -256,7 +259,7 @@
             this.edate.IconColor = System.Drawing.Color.White;
             this.edate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.edate.LeftTextMargin = 5;
-            this.edate.Location = new System.Drawing.Point(560, 269);
+            this.edate.Location = new System.Drawing.Point(560, 284);
             this.edate.Margin = new System.Windows.Forms.Padding(2);
             this.edate.MinimumSize = new System.Drawing.Size(4, 32);
             this.edate.Name = "edate";
@@ -299,7 +302,7 @@
             this.sdate.IconColor = System.Drawing.Color.White;
             this.sdate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.sdate.LeftTextMargin = 5;
-            this.sdate.Location = new System.Drawing.Point(137, 269);
+            this.sdate.Location = new System.Drawing.Point(137, 284);
             this.sdate.Margin = new System.Windows.Forms.Padding(2);
             this.sdate.MinimumSize = new System.Drawing.Size(4, 32);
             this.sdate.Name = "sdate";
@@ -330,7 +333,7 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel7.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel7.Location = new System.Drawing.Point(560, 127);
+            this.bunifuLabel7.Location = new System.Drawing.Point(560, 112);
             this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -348,7 +351,7 @@
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel3.Location = new System.Drawing.Point(560, 345);
+            this.bunifuLabel3.Location = new System.Drawing.Point(560, 356);
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -461,7 +464,7 @@
             this.priced.IconRight = null;
             this.priced.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.priced.Lines = new string[0];
-            this.priced.Location = new System.Drawing.Point(560, 375);
+            this.priced.Location = new System.Drawing.Point(560, 398);
             this.priced.Margin = new System.Windows.Forms.Padding(2);
             this.priced.MaxLength = 32767;
             this.priced.MinimumSize = new System.Drawing.Size(1, 1);
@@ -515,7 +518,7 @@
             this.deletebtn.BackColor = System.Drawing.Color.Transparent;
             this.deletebtn.BackgroundImage = global::Veterinary.Properties.Resources._3d_fluency_cancel;
             this.deletebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.deletebtn.Location = new System.Drawing.Point(538, 481);
+            this.deletebtn.Location = new System.Drawing.Point(537, 501);
             this.deletebtn.Margin = new System.Windows.Forms.Padding(2);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(77, 76);
@@ -529,7 +532,7 @@
             this.updatebtn.BackColor = System.Drawing.Color.Transparent;
             this.updatebtn.BackgroundImage = global::Veterinary.Properties.Resources._3d_fluency_restart;
             this.updatebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.updatebtn.Location = new System.Drawing.Point(430, 481);
+            this.updatebtn.Location = new System.Drawing.Point(429, 501);
             this.updatebtn.Margin = new System.Windows.Forms.Padding(2);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.Size = new System.Drawing.Size(77, 76);
@@ -543,7 +546,7 @@
             this.addbtn.BackColor = System.Drawing.Color.Transparent;
             this.addbtn.BackgroundImage = global::Veterinary.Properties.Resources._3d_fluency_add;
             this.addbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addbtn.Location = new System.Drawing.Point(322, 481);
+            this.addbtn.Location = new System.Drawing.Point(321, 501);
             this.addbtn.Margin = new System.Windows.Forms.Padding(2);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(77, 76);
@@ -578,7 +581,7 @@
             this.dur.IconRight = null;
             this.dur.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.dur.Lines = new string[0];
-            this.dur.Location = new System.Drawing.Point(137, 375);
+            this.dur.Location = new System.Drawing.Point(137, 398);
             this.dur.Margin = new System.Windows.Forms.Padding(2);
             this.dur.MaxLength = 32767;
             this.dur.MinimumSize = new System.Drawing.Size(1, 1);
@@ -633,7 +636,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel4.Location = new System.Drawing.Point(137, 347);
+            this.bunifuLabel4.Location = new System.Drawing.Point(137, 356);
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -726,7 +729,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel5.Location = new System.Drawing.Point(137, 127);
+            this.bunifuLabel5.Location = new System.Drawing.Point(137, 112);
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -748,13 +751,30 @@
             this.Return.TabStop = false;
             this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
+            // bunifuLabel11
+            // 
+            this.bunifuLabel11.AllowParentOverrides = false;
+            this.bunifuLabel11.AutoEllipsis = false;
+            this.bunifuLabel11.CursorType = null;
+            this.bunifuLabel11.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel11.Location = new System.Drawing.Point(655, 20);
+            this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel11.Name = "bunifuLabel11";
+            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel11.Size = new System.Drawing.Size(410, 53);
+            this.bunifuLabel11.TabIndex = 49;
+            this.bunifuLabel11.Text = "Pens (Hospitalized)";
+            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Pens
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1665, 1079);
+            this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.updatebtn);
@@ -814,5 +834,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox id_p;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private System.Windows.Forms.PictureBox Return;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
     }
 }

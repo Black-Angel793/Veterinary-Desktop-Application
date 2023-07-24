@@ -114,7 +114,7 @@ namespace Veterinary.PL.Pens
         {
             Form1 home = new Form1();
             home.Show();
-            this.Close();
+            Close();
         }
 
         private void DataGridViewPens_Click(object sender, EventArgs e)

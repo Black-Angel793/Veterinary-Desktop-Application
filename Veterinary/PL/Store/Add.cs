@@ -33,7 +33,7 @@ namespace Veterinary.PL.Store
 
                 PL.Store.List list = new PL.Store.List();
                 list.Show();
-                this.Close();
+                Close();
 
             }
             catch (Exception ex)
@@ -51,7 +51,7 @@ namespace Veterinary.PL.Store
         {
             Form1 h = new Form1();
             h.Show();
-            this.Close();
+            Close();
         }
     }
 }
