@@ -954,5 +954,8 @@
   <ItemGroup>
     <None Include="Resources\client  with dog.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dl.beatsnoop.com-high-99eb5caed2a42b9efa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

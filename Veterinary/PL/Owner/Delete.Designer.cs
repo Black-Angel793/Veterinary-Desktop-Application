@@ -59,7 +59,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Azure;
-            this.bunifuLabel1.Location = new System.Drawing.Point(102, 64);
+            this.bunifuLabel1.Location = new System.Drawing.Point(64, 70);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -96,7 +96,7 @@
             this.id.IconRight = null;
             this.id.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.id.Lines = new string[0];
-            this.id.Location = new System.Drawing.Point(79, 157);
+            this.id.Location = new System.Drawing.Point(49, 157);
             this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.MaxLength = 32767;
             this.id.MinimumSize = new System.Drawing.Size(1, 1);
@@ -171,7 +171,7 @@
             this.FN.IconRight = null;
             this.FN.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.FN.Lines = new string[0];
-            this.FN.Location = new System.Drawing.Point(350, 157);
+            this.FN.Location = new System.Drawing.Point(320, 157);
             this.FN.Margin = new System.Windows.Forms.Padding(2);
             this.FN.MaxLength = 32767;
             this.FN.MinimumSize = new System.Drawing.Size(1, 1);
@@ -246,7 +246,7 @@
             this.LN.IconRight = null;
             this.LN.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.LN.Lines = new string[0];
-            this.LN.Location = new System.Drawing.Point(619, 157);
+            this.LN.Location = new System.Drawing.Point(589, 157);
             this.LN.Margin = new System.Windows.Forms.Padding(2);
             this.LN.MaxLength = 32767;
             this.LN.MinimumSize = new System.Drawing.Size(1, 1);
@@ -341,7 +341,7 @@
             this.yes.IdleIconLeftImage = null;
             this.yes.IdleIconRightImage = null;
             this.yes.IndicateFocus = false;
-            this.yes.Location = new System.Drawing.Point(242, 262);
+            this.yes.Location = new System.Drawing.Point(232, 256);
             this.yes.Margin = new System.Windows.Forms.Padding(2);
             this.yes.Name = "yes";
             this.yes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -432,7 +432,7 @@
             this.no.IdleIconLeftImage = null;
             this.no.IdleIconRightImage = null;
             this.no.IndicateFocus = false;
-            this.no.Location = new System.Drawing.Point(506, 262);
+            this.no.Location = new System.Drawing.Point(496, 256);
             this.no.Margin = new System.Windows.Forms.Padding(2);
             this.no.Name = "no";
             this.no.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -481,7 +481,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(914, 402);
+            this.ClientSize = new System.Drawing.Size(871, 376);
             this.Controls.Add(this.no);
             this.Controls.Add(this.yes);
             this.Controls.Add(this.LN);

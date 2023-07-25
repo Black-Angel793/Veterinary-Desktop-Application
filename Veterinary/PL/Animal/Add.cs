@@ -131,7 +131,7 @@ namespace Veterinary.PL.Animal
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Animal.List home = new PL.Animal.List();
             home.Show();
             Close();
         }

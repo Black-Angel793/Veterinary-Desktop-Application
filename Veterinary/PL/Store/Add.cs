@@ -49,7 +49,7 @@ namespace Veterinary.PL.Store
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 h = new Form1();
+            PL.Store.List h = new PL.Store.List();
             h.Show();
             Close();
         }

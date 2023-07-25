@@ -24,7 +24,16 @@ namespace Veterinary.PL.Account
         public static string un;
 
         private void Login_Load(object sender, EventArgs e)
-        {            
+        {
+            /*int intX = Screen.PrimaryScreen.Bounds.Width;
+            int intY = Screen.PrimaryScreen.Bounds.Height;
+            if (intX < this.Width)
+                this.Width = intX;
+            if (intY < this.Height)
+                this.Height = intY;*/
+
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+
             password.UseSystemPasswordChar = true;
         }
 

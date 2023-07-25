@@ -58,7 +58,7 @@ namespace Veterinary.PL.Treatment
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Treatment.List home = new PL.Treatment.List();
             home.Show();
             Close();
         }

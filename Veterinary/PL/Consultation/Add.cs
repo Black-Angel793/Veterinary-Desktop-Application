@@ -64,7 +64,7 @@ namespace Veterinary.PL.Consultation
             {
                 ML.CRUD crud = new ML.CRUD();
 
-                crud.insert_consultation(ConDate.Text, ConTime.Text, observation.Text, diagnosis.Text, int.Parse(id_a.Text),conType.SelectedIndex);
+                crud.insert_consultation(ConDate.Text, diagnosis.Text,float.Parse(price.Text), int.Parse(id_a.Text),conType.SelectedIndex);
    
                 MessageBox.Show("Consultation Added Successfully !!");
 
@@ -81,7 +81,7 @@ namespace Veterinary.PL.Consultation
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Consultation.List home = new PL.Consultation.List();
             home.Show();
             Close();
         }

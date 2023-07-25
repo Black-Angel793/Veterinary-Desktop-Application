@@ -26,8 +26,7 @@ namespace Veterinary.PL.Owner
             {
                 ML.CRUD crud = new ML.CRUD();
 
-                crud.insert_owner(FN.Text, LN.Text, sex.Text, email.Text,
-                    int.Parse(phone.Text),address.Text);
+                crud.insert_owner(FN.Text, LN.Text, sex.Text,int.Parse(phone.Text),address.Text);
 
                 MessageBox.Show("Client Added Successfully !!");
 
@@ -44,7 +43,7 @@ namespace Veterinary.PL.Owner
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Owner.List home = new PL.Owner.List();
             home.Show();
             Close();
         }

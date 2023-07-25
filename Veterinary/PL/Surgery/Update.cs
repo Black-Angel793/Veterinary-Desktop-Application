@@ -23,7 +23,6 @@ namespace Veterinary.PL.Surgery
         {
             id.Text = List.id;
             SDate.Text = List.DS;
-            ST.Text = List.TS;
             SN.Text = List.PS;
             AT.Text = List.AT;
             notes.Text = List.notes;
@@ -33,7 +32,7 @@ namespace Veterinary.PL.Surgery
         {
             try
             {
-                updt.update_surgery(int.Parse(id.Text), SDate.Text, ST.Text,SN.Text,AT.Text,notes.Text, int.Parse(id_c.Text));
+                updt.update_surgery(int.Parse(id.Text), SDate.Text,SN.Text,AT.Text,notes.Text, int.Parse(id_c.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
                 Close();
@@ -46,7 +45,7 @@ namespace Veterinary.PL.Surgery
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Surgery.List home = new PL.Surgery.List();
             home.Show();
             Close();    
         }

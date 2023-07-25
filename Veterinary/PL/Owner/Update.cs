@@ -28,7 +28,6 @@ namespace Veterinary.PL.Owner
             FN.Text = List.FN;
             LN.Text = List.LN;
             sex.Text = List.S;
-            email.Text = List.email;
             phone.Text = List.PH;
             address.Text = List.A;
         }
@@ -36,7 +35,7 @@ namespace Veterinary.PL.Owner
         {
             try
             {
-                updt.update_owner(int.Parse(id.Text), FN.Text, LN.Text,sex.Text, email.Text, int.Parse(phone.Text), address.Text);
+                updt.update_owner(int.Parse(id.Text), FN.Text, LN.Text,sex.Text, int.Parse(phone.Text), address.Text);
                
                 MessageBox.Show("Information has been updated successfully !!!");
                 Close();
@@ -49,7 +48,7 @@ namespace Veterinary.PL.Owner
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Owner.List home = new PL.Owner.List();
             home.Show();
             Close();
         }

@@ -65,10 +65,10 @@
             this.Return.BackColor = System.Drawing.Color.Transparent;
             this.Return.BackgroundImage = global::Veterinary.Properties.Resources.back;
             this.Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Return.Location = new System.Drawing.Point(4, 2);
+            this.Return.Location = new System.Drawing.Point(7, 6);
             this.Return.Margin = new System.Windows.Forms.Padding(2);
             this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(64, 54);
+            this.Return.Size = new System.Drawing.Size(44, 44);
             this.Return.TabIndex = 40;
             this.Return.TabStop = false;
             this.Return.Click += new System.EventHandler(this.Return_Click);

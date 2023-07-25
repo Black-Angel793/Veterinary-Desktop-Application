@@ -29,9 +29,8 @@ namespace Veterinary.PL.Consultation
         {
             id.Text = List.id;
             ConDate.Text = List.CD;
-            ConTime.Text = List.CT;
-            observation.Text = List.Obser;
             diagnosis.Text = List.Diagn;
+            price.Text = List.Price;
             id_a.Text = List.animal;
             conType.Text = List.conType;
 
@@ -45,7 +44,7 @@ namespace Veterinary.PL.Consultation
         {
             try
             {
-                updt.update_consultation(int.Parse(id.Text), ConDate.Text, ConTime.Text, observation.Text, diagnosis.Text, int.Parse(id_a.Text),int.Parse(conType.Text));
+                updt.update_consultation(int.Parse(id.Text), ConDate.Text, diagnosis.Text,float.Parse(price.Text), int.Parse(id_a.Text),int.Parse(conType.Text));
 
                 MessageBox.Show("Information Updated successfully !!!");
                 Close();
@@ -58,7 +57,7 @@ namespace Veterinary.PL.Consultation
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Consultation.List home = new PL.Consultation.List();
             home.Show();
             Close();
         }

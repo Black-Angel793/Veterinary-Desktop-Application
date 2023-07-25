@@ -463,7 +463,7 @@
             this.Return.Location = new System.Drawing.Point(1, 0);
             this.Return.Margin = new System.Windows.Forms.Padding(2);
             this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(64, 54);
+            this.Return.Size = new System.Drawing.Size(44, 44);
             this.Return.TabIndex = 44;
             this.Return.TabStop = false;
             this.Return.Click += new System.EventHandler(this.Return_Click);

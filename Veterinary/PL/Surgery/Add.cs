@@ -40,7 +40,7 @@ namespace Veterinary.PL.Surgery
         {
             try
             {
-                crud.insert_surgery(SDate.Text, ST.Text, SN.Text,AT.Text,notes.Text,int.Parse(id_c.Text));
+                crud.insert_surgery(SDate.Text, SN.Text,AT.Text,notes.Text,int.Parse(id_c.Text));
 
                 MessageBox.Show("Surgery Added Successfully !!");
 
@@ -57,7 +57,7 @@ namespace Veterinary.PL.Surgery
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            PL.Surgery.List home = new PL.Surgery.List();
             home.Show();
             Close();
         }

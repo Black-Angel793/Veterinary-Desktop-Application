@@ -22,7 +22,6 @@ namespace Veterinary
 
         public void PopulateFromRow(DataRow row)
         {
-            starttime.Text = row["StartTime"].ToString();
             reason.Text = row["Reason"].ToString();
             cname.Text = row["F_Name"].ToString();
 

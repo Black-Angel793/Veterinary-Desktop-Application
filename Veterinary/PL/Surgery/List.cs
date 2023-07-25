@@ -22,7 +22,6 @@ namespace Veterinary.PL.Surgery
 
         public static string id;
         public static string DS;
-        public static string TS;
         public static string PS;
         public static string AT;
         public static string notes;
@@ -37,11 +36,10 @@ namespace Veterinary.PL.Surgery
                 //Datagridview Header 
                 DGVsurgery.Columns[0].HeaderText = "Identification";
                 DGVsurgery.Columns[1].HeaderText = "Surgery Date";
-                DGVsurgery.Columns[2].HeaderText = "Surgery Time";
-                DGVsurgery.Columns[3].HeaderText = "Surgery Procedure";
-                DGVsurgery.Columns[4].HeaderText = "Anesthesia Type";
-                DGVsurgery.Columns[5].HeaderText = "Notes";
-                DGVsurgery.Columns[6].HeaderText = "Consultation ID";
+                DGVsurgery.Columns[2].HeaderText = "Surgery Procedure";
+                DGVsurgery.Columns[3].HeaderText = "Anesthesia Type";
+                DGVsurgery.Columns[4].HeaderText = "Notes";
+                DGVsurgery.Columns[5].HeaderText = "Consultation ID";
             }
             else
             {
@@ -59,11 +57,10 @@ namespace Veterinary.PL.Surgery
             {
                 id = DGVsurgery.CurrentRow.Cells[0].Value.ToString();
                 DS = DGVsurgery.CurrentRow.Cells[1].Value.ToString();
-                TS = DGVsurgery.CurrentRow.Cells[2].Value.ToString();
-                PS = DGVsurgery.CurrentRow.Cells[3].Value.ToString();
-                AT = DGVsurgery.CurrentRow.Cells[4].Value.ToString();
-                notes = DGVsurgery.CurrentRow.Cells[5].Value.ToString();
-                consult = DGVsurgery.CurrentRow.Cells[6].Value.ToString();
+                PS = DGVsurgery.CurrentRow.Cells[2].Value.ToString();
+                AT = DGVsurgery.CurrentRow.Cells[3].Value.ToString();
+                notes = DGVsurgery.CurrentRow.Cells[4].Value.ToString();
+                consult = DGVsurgery.CurrentRow.Cells[5].Value.ToString();
 
                 PL.Surgery.Update u = new PL.Surgery.Update();
                 u.Show();

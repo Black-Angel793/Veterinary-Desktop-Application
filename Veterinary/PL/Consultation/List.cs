@@ -23,9 +23,8 @@ namespace Veterinary.PL.Consultation
 
         public static string id;
         public static string CD;
-        public static string CT;
-        public static string Obser;
         public static string Diagn;
+        public static string Price;
         public static string animal;
         public static string conType;
 
@@ -38,11 +37,10 @@ namespace Veterinary.PL.Consultation
                 //Datagridview Header 
                 DGVcons.Columns[0].HeaderText = "Identification";
                 DGVcons.Columns[1].HeaderText = "Consultation Date";
-                DGVcons.Columns[2].HeaderText = "Consultation Time";
-                DGVcons.Columns[3].HeaderText = "Observation";
-                DGVcons.Columns[4].HeaderText = "Diagnosis";
-                DGVcons.Columns[5].HeaderText = "Animal";
-                DGVcons.Columns[6].HeaderText = "Consultation Type";
+                DGVcons.Columns[2].HeaderText = "Diagnosis";
+                DGVcons.Columns[3].HeaderText = "Price";
+                DGVcons.Columns[4].HeaderText = "Animal";
+                DGVcons.Columns[5].HeaderText = "Consultation Type";
             }
             else
             {
@@ -60,11 +58,10 @@ namespace Veterinary.PL.Consultation
             {
                 id = DGVcons.CurrentRow.Cells[0].Value.ToString();
                 CD = DGVcons.CurrentRow.Cells[1].Value.ToString();
-                CT = DGVcons.CurrentRow.Cells[2].Value.ToString();
-                Obser = DGVcons.CurrentRow.Cells[3].Value.ToString();
-                Diagn = DGVcons.CurrentRow.Cells[4].Value.ToString();
-                animal = DGVcons.CurrentRow.Cells[5].Value.ToString();
-                conType = DGVcons.CurrentRow.Cells[6].Value.ToString();
+                Diagn = DGVcons.CurrentRow.Cells[2].Value.ToString();
+                Price = DGVcons.CurrentRow.Cells[3].Value.ToString();
+                animal = DGVcons.CurrentRow.Cells[4].Value.ToString();
+                conType = DGVcons.CurrentRow.Cells[5].Value.ToString();
 
                 PL.Consultation.Update u = new PL.Consultation.Update();
                 u.Show();

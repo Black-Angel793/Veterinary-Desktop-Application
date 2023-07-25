@@ -28,7 +28,6 @@ namespace Veterinary.PL.Owner
         public static string S;
         public static string A;
         public static string PH;
-        public static string email;
 
         private void List_Load(object sender, EventArgs e)
         {
@@ -41,9 +40,8 @@ namespace Veterinary.PL.Owner
                 DGVOwner.Columns[1].HeaderText = "Prénom";
                 DGVOwner.Columns[2].HeaderText = "Nom";
                 DGVOwner.Columns[3].HeaderText = "Sexe";
-                DGVOwner.Columns[4].HeaderText = "Email";
-                DGVOwner.Columns[5].HeaderText = "Phone";
-                DGVOwner.Columns[6].HeaderText = "Address";
+                DGVOwner.Columns[4].HeaderText = "Phone";
+                DGVOwner.Columns[5].HeaderText = "Address";
             }
             else
             {
@@ -63,9 +61,8 @@ namespace Veterinary.PL.Owner
                 FN = DGVOwner.CurrentRow.Cells[1].Value.ToString();
                 LN = DGVOwner.CurrentRow.Cells[2].Value.ToString();
                 S = DGVOwner.CurrentRow.Cells[3].Value.ToString();
-                email = DGVOwner.CurrentRow.Cells[4].Value.ToString();
-                PH = DGVOwner.CurrentRow.Cells[5].Value.ToString();
-                A = DGVOwner.CurrentRow.Cells[6].Value.ToString();
+                PH = DGVOwner.CurrentRow.Cells[4].Value.ToString();
+                A = DGVOwner.CurrentRow.Cells[5].Value.ToString();
 
                 PL.Owner.Update u = new PL.Owner.Update();
                 u.Show();

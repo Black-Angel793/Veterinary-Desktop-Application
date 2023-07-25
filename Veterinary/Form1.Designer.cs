@@ -113,7 +113,7 @@
             this.animalbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_pet_96;
             this.animalbtn.IdleIconRightImage = null;
             this.animalbtn.IndicateFocus = false;
-            this.animalbtn.Location = new System.Drawing.Point(409, 22);
+            this.animalbtn.Location = new System.Drawing.Point(348, 19);
             this.animalbtn.Margin = new System.Windows.Forms.Padding(2);
             this.animalbtn.Name = "animalbtn";
             this.animalbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -204,7 +204,7 @@
             this.ownerbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_client_90;
             this.ownerbtn.IdleIconRightImage = null;
             this.ownerbtn.IndicateFocus = false;
-            this.ownerbtn.Location = new System.Drawing.Point(558, 22);
+            this.ownerbtn.Location = new System.Drawing.Point(497, 19);
             this.ownerbtn.Margin = new System.Windows.Forms.Padding(2);
             this.ownerbtn.Name = "ownerbtn";
             this.ownerbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -295,7 +295,7 @@
             this.appointmentbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_appointment_68;
             this.appointmentbtn.IdleIconRightImage = null;
             this.appointmentbtn.IndicateFocus = false;
-            this.appointmentbtn.Location = new System.Drawing.Point(707, 22);
+            this.appointmentbtn.Location = new System.Drawing.Point(646, 19);
             this.appointmentbtn.Margin = new System.Windows.Forms.Padding(2);
             this.appointmentbtn.Name = "appointmentbtn";
             this.appointmentbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -386,7 +386,7 @@
             this.consultationbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_vet_consultation_64;
             this.consultationbtn.IdleIconRightImage = null;
             this.consultationbtn.IndicateFocus = false;
-            this.consultationbtn.Location = new System.Drawing.Point(930, 22);
+            this.consultationbtn.Location = new System.Drawing.Point(869, 19);
             this.consultationbtn.Margin = new System.Windows.Forms.Padding(2);
             this.consultationbtn.Name = "consultationbtn";
             this.consultationbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -477,7 +477,7 @@
             this.paymentbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_money_96;
             this.paymentbtn.IdleIconRightImage = null;
             this.paymentbtn.IndicateFocus = false;
-            this.paymentbtn.Location = new System.Drawing.Point(752, 80);
+            this.paymentbtn.Location = new System.Drawing.Point(691, 77);
             this.paymentbtn.Margin = new System.Windows.Forms.Padding(2);
             this.paymentbtn.Name = "paymentbtn";
             this.paymentbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -568,7 +568,7 @@
             this.storebtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_petshop_68;
             this.storebtn.IdleIconRightImage = null;
             this.storebtn.IndicateFocus = false;
-            this.storebtn.Location = new System.Drawing.Point(603, 80);
+            this.storebtn.Location = new System.Drawing.Point(542, 77);
             this.storebtn.Margin = new System.Windows.Forms.Padding(2);
             this.storebtn.Name = "storebtn";
             this.storebtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -618,10 +618,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Veterinary.Properties.Resources.female_doctor_and_male_doctor_standing_together;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(118, 312);
+            this.pictureBox1.Location = new System.Drawing.Point(118, 308);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(316, 544);
+            this.pictureBox1.Size = new System.Drawing.Size(310, 441);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -631,10 +631,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Veterinary.Properties.Resources.white_dog_standing;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 694);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 602);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(143, 176);
+            this.pictureBox2.Size = new System.Drawing.Size(143, 147);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -644,10 +644,10 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Veterinary.Properties.Resources.cat_standing;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(387, 694);
+            this.pictureBox3.Location = new System.Drawing.Point(409, 602);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(188, 177);
+            this.pictureBox3.Size = new System.Drawing.Size(182, 148);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
@@ -657,7 +657,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 125);
+            this.label1.Location = new System.Drawing.Point(11, 97);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 49);
@@ -670,7 +670,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(25, 187);
+            this.label2.Location = new System.Drawing.Point(11, 159);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 49);
@@ -683,7 +683,7 @@
             this.doctorname.BackColor = System.Drawing.Color.Transparent;
             this.doctorname.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorname.ForeColor = System.Drawing.Color.White;
-            this.doctorname.Location = new System.Drawing.Point(97, 187);
+            this.doctorname.Location = new System.Drawing.Point(83, 159);
             this.doctorname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.doctorname.Name = "doctorname";
             this.doctorname.Size = new System.Drawing.Size(0, 49);
@@ -695,7 +695,7 @@
             this.close.BackgroundImage = global::Veterinary.Properties.Resources.icons8_close_90;
             this.close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close.Location = new System.Drawing.Point(1428, 1);
+            this.close.Location = new System.Drawing.Point(1323, 1);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(30, 29);
             this.close.TabIndex = 6;
@@ -749,7 +749,7 @@
             this.pensbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_pet_carrier_68;
             this.pensbtn.IdleIconRightImage = null;
             this.pensbtn.IndicateFocus = false;
-            this.pensbtn.Location = new System.Drawing.Point(454, 80);
+            this.pensbtn.Location = new System.Drawing.Point(393, 77);
             this.pensbtn.Margin = new System.Windows.Forms.Padding(2);
             this.pensbtn.Name = "pensbtn";
             this.pensbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -840,7 +840,7 @@
             this.treatmentbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_treatment_60;
             this.treatmentbtn.IdleIconRightImage = null;
             this.treatmentbtn.IndicateFocus = false;
-            this.treatmentbtn.Location = new System.Drawing.Point(1153, 22);
+            this.treatmentbtn.Location = new System.Drawing.Point(1092, 19);
             this.treatmentbtn.Margin = new System.Windows.Forms.Padding(2);
             this.treatmentbtn.Name = "treatmentbtn";
             this.treatmentbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -887,9 +887,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(673, 295);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(632, 295);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(771, 563);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(712, 443);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // label3
@@ -963,7 +963,7 @@
             this.ordersbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_order_64;
             this.ordersbtn.IdleIconRightImage = null;
             this.ordersbtn.IndicateFocus = false;
-            this.ordersbtn.Location = new System.Drawing.Point(930, 80);
+            this.ordersbtn.Location = new System.Drawing.Point(869, 77);
             this.ordersbtn.Margin = new System.Windows.Forms.Padding(2);
             this.ordersbtn.Name = "ordersbtn";
             this.ordersbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -1054,7 +1054,7 @@
             this.medbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_medication_64;
             this.medbtn.IdleIconRightImage = null;
             this.medbtn.IndicateFocus = false;
-            this.medbtn.Location = new System.Drawing.Point(1097, 80);
+            this.medbtn.Location = new System.Drawing.Point(1036, 77);
             this.medbtn.Margin = new System.Windows.Forms.Padding(2);
             this.medbtn.Name = "medbtn";
             this.medbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -1104,7 +1104,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1456, 870);
+            this.ClientSize = new System.Drawing.Size(1356, 750);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.close);

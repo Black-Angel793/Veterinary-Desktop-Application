@@ -333,6 +333,16 @@ namespace Veterinary.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dl_beatsnoop_com_high_99eb5caed2a42b9efa {
+            get {
+                object obj = ResourceManager.GetObject("dl.beatsnoop.com-high-99eb5caed2a42b9efa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dl_beatsnoop_com_high_d09449effd3637ea81 {
             get {
                 object obj = ResourceManager.GetObject("dl.beatsnoop.com-high-d09449effd3637ea81", resourceCulture);

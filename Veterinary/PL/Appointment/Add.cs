@@ -45,7 +45,7 @@ namespace Veterinary.PL.Appointment
         {
             try
             {
-                crud.insert_appointment(ADate.Text, ST.Text, ET.Text, Reason.Text, Notes.Text,int.Parse(id_c.Text));
+                crud.insert_appointment(ADate.Text, Reason.Text,int.Parse(id_c.Text));
 
                 MessageBox.Show("Appointment Added Successfully !!");
 

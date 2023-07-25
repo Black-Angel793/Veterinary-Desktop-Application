@@ -74,7 +74,7 @@
             this.eyeclose.BackColor = System.Drawing.Color.Transparent;
             this.eyeclose.BackgroundImage = global::Veterinary.Properties.Resources.icons8_closed_eye_80;
             this.eyeclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eyeclose.Location = new System.Drawing.Point(933, 434);
+            this.eyeclose.Location = new System.Drawing.Point(903, 334);
             this.eyeclose.Name = "eyeclose";
             this.eyeclose.Size = new System.Drawing.Size(41, 37);
             this.eyeclose.TabIndex = 14;
@@ -86,7 +86,7 @@
             this.eyeopen.BackColor = System.Drawing.Color.Transparent;
             this.eyeopen.BackgroundImage = global::Veterinary.Properties.Resources.icons8_eye_80;
             this.eyeopen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eyeopen.Location = new System.Drawing.Point(933, 434);
+            this.eyeopen.Location = new System.Drawing.Point(903, 334);
             this.eyeopen.Name = "eyeopen";
             this.eyeopen.Size = new System.Drawing.Size(41, 37);
             this.eyeopen.TabIndex = 15;
@@ -101,7 +101,7 @@
             this.loginlbl.CursorType = System.Windows.Forms.Cursors.Hand;
             this.loginlbl.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginlbl.ForeColor = System.Drawing.Color.Black;
-            this.loginlbl.Location = new System.Drawing.Point(656, 606);
+            this.loginlbl.Location = new System.Drawing.Point(626, 504);
             this.loginlbl.Name = "loginlbl";
             this.loginlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.loginlbl.Size = new System.Drawing.Size(239, 27);
@@ -120,7 +120,7 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel2.Location = new System.Drawing.Point(656, 377);
+            this.bunifuLabel2.Location = new System.Drawing.Point(626, 277);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(89, 27);
@@ -137,7 +137,7 @@
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Britannic Bold", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel3.Location = new System.Drawing.Point(666, 142);
+            this.bunifuLabel3.Location = new System.Drawing.Point(635, 59);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(206, 62);
@@ -154,7 +154,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(656, 251);
+            this.bunifuLabel1.Location = new System.Drawing.Point(626, 151);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(94, 27);
@@ -210,7 +210,7 @@
             this.registerbtn.IdleIconLeftImage = null;
             this.registerbtn.IdleIconRightImage = null;
             this.registerbtn.IndicateFocus = false;
-            this.registerbtn.Location = new System.Drawing.Point(679, 680);
+            this.registerbtn.Location = new System.Drawing.Point(663, 550);
             this.registerbtn.Name = "registerbtn";
             this.registerbtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.registerbtn.OnDisabledState.BorderRadius = 30;
@@ -281,7 +281,7 @@
             this.password.IconRight = null;
             this.password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.password.Lines = new string[0];
-            this.password.Location = new System.Drawing.Point(642, 419);
+            this.password.Location = new System.Drawing.Point(612, 319);
             this.password.MaxLength = 32767;
             this.password.MinimumSize = new System.Drawing.Size(1, 1);
             this.password.Modified = false;
@@ -356,7 +356,7 @@
             this.username.IconRight = null;
             this.username.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.username.Lines = new string[0];
-            this.username.Location = new System.Drawing.Point(642, 293);
+            this.username.Location = new System.Drawing.Point(612, 193);
             this.username.MaxLength = 32767;
             this.username.MinimumSize = new System.Drawing.Size(1, 1);
             this.username.Modified = false;
@@ -407,7 +407,7 @@
             // 
             this.roles.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roles.FormattingEnabled = true;
-            this.roles.Location = new System.Drawing.Point(666, 546);
+            this.roles.Location = new System.Drawing.Point(635, 446);
             this.roles.Name = "roles";
             this.roles.Size = new System.Drawing.Size(204, 32);
             this.roles.TabIndex = 16;
@@ -417,7 +417,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Veterinary.Properties.Resources.user_shield;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(606, 546);
+            this.pictureBox1.Location = new System.Drawing.Point(575, 446);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 32);
             this.pictureBox1.TabIndex = 14;
@@ -430,7 +430,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel4.Location = new System.Drawing.Point(679, 503);
+            this.bunifuLabel4.Location = new System.Drawing.Point(648, 403);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(40, 27);
@@ -444,7 +444,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.group_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1261, 885);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.roles);
             this.Controls.Add(this.close);
             this.Controls.Add(this.pictureBox1);

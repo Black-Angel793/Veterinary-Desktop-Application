@@ -41,7 +41,7 @@ namespace Veterinary.PL.Medication
 
         private void Return_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            PL.Medication.List form1 = new PL.Medication.List();
             form1.Show();
             Close();
         }
