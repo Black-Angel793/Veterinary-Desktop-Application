@@ -19,6 +19,7 @@ namespace Veterinary.PL.Account
         }
 
         ML.CRUD crud = new ML.CRUD();
+        Dictionary<string,int> user_Roles = new Dictionary<string,int>();
 
         private void Registration_Load(object sender, EventArgs e)
         {
@@ -27,17 +28,25 @@ namespace Veterinary.PL.Account
             foreach (DataRow dr in dt_Type.Rows)
             {
                 roles.Items.Add(dr["RoleType"].ToString());
+                user_Roles.Add(dr["RoleType"].ToString(), int.Parse(dr["idRole"].ToString()));
             }
             password.UseSystemPasswordChar = true;
         }
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
+            int roleid = 0;
             try
-            {               
-                crud.insert_user(username.Text, password.Text, roles.Text);
+            {   
+                user_Roles.TryGetValue(roles.Text, out roleid);
+
+                crud.insert_user(username.Text, password.Text, roleid);
 
                 MessageBox.Show("User Added Successfully!!");
+
+                PL.Account.Login login = new PL.Account.Login();
+                login.Show();
+                Close();
             }
             catch (Exception ex)
             {

@@ -674,6 +674,15 @@ namespace Veterinary.ML
             lst_payment.close();
             return d;
         }
+        public DataTable GetTempTableMessages()
+        {
+            DAL.DAL message = new DAL.DAL();
+            DataTable d = new DataTable();
+            message.open();
+            d = message.read_data1("GetMessage");
+            message.close();
+            return d;
+        }
 
         //Store CRUD
         public void insert_product(string pn,int qts,float price)
@@ -889,7 +898,7 @@ namespace Veterinary.ML
         }
 
         //Account CRUD 
-        public void insert_user(string usern, string userp, string userr)
+        public void insert_user(string usern, string userp, int userr)
         {
             DAL.DAL insert = new DAL.DAL();
             SqlParameter[] param = new SqlParameter[3];
@@ -897,7 +906,7 @@ namespace Veterinary.ML
             param[0].Value = usern;
             param[1] = new SqlParameter("@up", SqlDbType.VarChar, 8);
             param[1].Value = userp;
-            param[2] = new SqlParameter("@ur", SqlDbType.VarChar, 15);
+            param[2] = new SqlParameter("@ur", SqlDbType.Int);
             param[2].Value = userr;
             insert.open();
             insert.execop("insert_User", param);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,21 +22,23 @@ namespace Veterinary.PL.Payment
         DataTable dtc = new DataTable();
         DataTable dtp = new DataTable();
 
+        decimal prices;
+        decimal Rests = 0;
+
         private void Payment_Load(object sender, EventArgs e)
         {
-            dtc = crud.list_owner();
+            dtc = crud.list_consultations();
             if (dtc.Rows.Count > 0)
             {
-                DataGridViewClient.DataSource = dtc;
+                DataGridViewConsult.DataSource = dtc;
 
                 //Datagridview Header 
-                DataGridViewClient.Columns[0].HeaderText = "Identification";
-                DataGridViewClient.Columns[1].HeaderText = "First Name";
-                DataGridViewClient.Columns[2].HeaderText = "Last Name";
-                DataGridViewClient.Columns[3].HeaderText = "BirthDate";
-                DataGridViewClient.Columns[4].HeaderText = "Email";
-                DataGridViewClient.Columns[5].HeaderText = "Adress";
-                DataGridViewClient.Columns[6].HeaderText = "Phone";
+                DataGridViewConsult.Columns[0].HeaderText = "Identification";
+                DataGridViewConsult.Columns[1].HeaderText = "Consultation Date";
+                DataGridViewConsult.Columns[2].HeaderText = "Diagnosis";
+                DataGridViewConsult.Columns[3].HeaderText = "Price";
+                DataGridViewConsult.Columns[4].HeaderText = "Animal ID";
+                DataGridViewConsult.Columns[5].HeaderText = "Consultation Type";
             }
             else
             {
@@ -48,23 +51,40 @@ namespace Veterinary.PL.Payment
                 DataGridViewPayment.DataSource = dtp;
 
                 //Datagridview Header 
-                DataGridViewClient.Columns[0].HeaderText = "Identification";
-                DataGridViewClient.Columns[1].HeaderText = "Date Payment";
-                DataGridViewClient.Columns[2].HeaderText = "Payment Amount";
-                DataGridViewClient.Columns[3].HeaderText = "consultation Id";
+                DataGridViewPayment.Columns[0].HeaderText = "Identification";
+                DataGridViewPayment.Columns[1].HeaderText = "Date Payment";
+                DataGridViewPayment.Columns[2].HeaderText = "Payment Amount";
+                DataGridViewPayment.Columns[3].HeaderText = "consultation Id";
             }
             else
             {
                 MessageBox.Show("List is Empty");
             }
+            foreach (DataGridViewRow row in DataGridViewConsult.Rows)
+            {
+                if (row.Cells["Price"].Value != null)
+                {
+                     prices = Convert.ToDecimal(row.Cells["Price"].Value.ToString());
+                    
+                }
+            }
+
+            //Rests = decimal.Parse(amount.Text) - prices;
+            //MessageBox.Show(Rests.ToString());
+
         }
 
         private void addbtn_Click(object sender, EventArgs e)
         {
+            Rests = decimal.Parse(amount.Text) - prices;
+            Rest.Text = Rests.ToString();
             try
             {
                 crud.insert_payment(float.Parse(amount.Text), int.Parse(id_c.Text));
                 MessageBox.Show("Payment Added Successfully!!!");
+
+                crud.GetTempTableMessages();
+
                 dtp = crud.list_payment();
                 DataGridViewPayment.DataSource = dtp;
             }
@@ -115,18 +135,6 @@ namespace Veterinary.PL.Payment
             Close();
         }
 
-        private void DataGridViewClient_Click(object sender, EventArgs e)
-        {
-            if (DataGridViewClient.SelectedRows.Count > 1)
-            {
-                MessageBox.Show("please select one row");
-            }
-            else
-            {
-                id_c.Text = DataGridViewClient.CurrentRow.Cells[0].Value.ToString();
-            }
-        }
-
         private void DataGridPayment_Click(object sender, EventArgs e)
         {
             if (DataGridViewPayment.SelectedRows.Count > 1)
@@ -136,6 +144,18 @@ namespace Veterinary.PL.Payment
             else
             {
                 id_p.Text = DataGridViewPayment.CurrentRow.Cells[0].Value.ToString();
+            }
+        }
+
+        private void DataGridViewConsult_Click(object sender, EventArgs e)
+        {
+            if (DataGridViewConsult.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("please select one row");
+            }
+            else
+            {
+                id_c.Text = DataGridViewConsult.CurrentRow.Cells[0].Value.ToString();
             }
         }
     }

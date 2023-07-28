@@ -16,7 +16,7 @@ namespace Veterinary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.Account.Login());
+            Application.Run(new PL.Payment.Payment());
         }
     }
 }

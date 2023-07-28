@@ -176,7 +176,7 @@ namespace Veterinary.PL.Purchase
             }
         
         // Refresh grid
-        DataGridViewProducts.DataSource = productTable;
+            DataGridViewProducts.DataSource = productTable;
             DataGridViewProducts.Update();
             DataGridViewProducts.Refresh();
 
