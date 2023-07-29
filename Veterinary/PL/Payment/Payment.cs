@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,7 +43,7 @@ namespace Veterinary.PL.Payment
             }
             else
             {
-                MessageBox.Show("List is Empty ");
+                MessageBox.Show("List est Vide ");
             }
 
             dtp = crud.list_payment();
@@ -58,7 +59,7 @@ namespace Veterinary.PL.Payment
             }
             else
             {
-                MessageBox.Show("List is Empty");
+                MessageBox.Show("List est Vide");
             }
             foreach (DataGridViewRow row in DataGridViewConsult.Rows)
             {
@@ -69,9 +70,6 @@ namespace Veterinary.PL.Payment
                 }
             }
 
-            //Rests = decimal.Parse(amount.Text) - prices;
-            //MessageBox.Show(Rests.ToString());
-
         }
 
         private void addbtn_Click(object sender, EventArgs e)
@@ -81,9 +79,14 @@ namespace Veterinary.PL.Payment
             try
             {
                 crud.insert_payment(float.Parse(amount.Text), int.Parse(id_c.Text));
-                MessageBox.Show("Payment Added Successfully!!!");
+                MessageBox.Show("Le paiement a été ajouté avec succès!!!");
 
-                crud.GetTempTableMessages();
+                DataTable message = crud.GetTempTableMessages();
+
+                string lastMessage = message.Rows[0]["MessageText"].ToString();
+
+                MessageBox.Show(lastMessage);
+
 
                 dtp = crud.list_payment();
                 DataGridViewPayment.DataSource = dtp;
@@ -99,7 +102,14 @@ namespace Veterinary.PL.Payment
             try
             {
                 crud.update_payment(int.Parse(id_p.Text),float.Parse(amount.Text), int.Parse(id_c.Text));
-                MessageBox.Show("Payment Updated Successfully!!!");
+                MessageBox.Show("Le paiement a été mis à jour avec succès!!!");
+
+                DataTable message = crud.GetTempTableMessages();
+
+                string lastMessage = message.Rows[0]["MessageText"].ToString();
+
+                MessageBox.Show(lastMessage);
+
                 dtp = crud.list_payment();
                 DataGridViewPayment.DataSource = dtp;
             }
@@ -113,10 +123,10 @@ namespace Veterinary.PL.Payment
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to delete this payment ?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Êtes-vous sûr(e) de vouloir supprimer ce paiement ?", "Supprimé", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     crud.delete_payment(int.Parse(id_p.Text));
-                    MessageBox.Show("Deleted Successfully !!!");
+                    MessageBox.Show("supprimé avec succès !!!");
                     dtp = crud.list_payment();
                     DataGridViewPayment.DataSource = dtp;
                 }
@@ -139,7 +149,7 @@ namespace Veterinary.PL.Payment
         {
             if (DataGridViewPayment.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -151,7 +161,7 @@ namespace Veterinary.PL.Payment
         {
             if (DataGridViewConsult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

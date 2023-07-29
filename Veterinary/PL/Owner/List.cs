@@ -45,7 +45,7 @@ namespace Veterinary.PL.Owner
             }
             else
             {
-                MessageBox.Show("List Empty...");
+                MessageBox.Show("List Est Vide");
             }
         }
 
@@ -53,7 +53,7 @@ namespace Veterinary.PL.Owner
         {
             if (DGVOwner.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Please Select one row !!");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -73,7 +73,7 @@ namespace Veterinary.PL.Owner
         {
             if (DGVOwner.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Pleas Select one row !!");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -115,7 +115,7 @@ namespace Veterinary.PL.Owner
             }
             else
             {
-                MessageBox.Show("List is Empty ...");
+                MessageBox.Show("List est Vide");
             }
         }
 

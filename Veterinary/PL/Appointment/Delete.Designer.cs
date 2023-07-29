@@ -57,15 +57,15 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Azure;
-            this.bunifuLabel1.Location = new System.Drawing.Point(44, 68);
+            this.bunifuLabel1.Location = new System.Drawing.Point(48, 81);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(857, 49);
+            this.bunifuLabel1.Size = new System.Drawing.Size(810, 44);
             this.bunifuLabel1.TabIndex = 14;
-            this.bunifuLabel1.Text = "Are you sure you want to delete this appointment ?";
+            this.bunifuLabel1.Text = "Êtes-vous sûr(e) de vouloir supprimer ce rendez-vous ?";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

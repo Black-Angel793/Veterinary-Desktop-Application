@@ -31,7 +31,7 @@ namespace Veterinary.PL.Appointment
             }
             else
             {
-                MessageBox.Show("list vide");
+                MessageBox.Show("list est vide");
             }
 
             id.Text = List.id;
@@ -46,7 +46,7 @@ namespace Veterinary.PL.Appointment
             {
                 updt.update_appointment(int.Parse(id.Text), ADate.Text,Reason.Text, int.Parse(id_c.Text));
 
-                MessageBox.Show("Information Updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 this.Close();
             }
             catch (Exception ex)
@@ -66,7 +66,7 @@ namespace Veterinary.PL.Appointment
         {
             if (DataGridViewConsult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

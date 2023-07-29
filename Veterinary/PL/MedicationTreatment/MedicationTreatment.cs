@@ -70,7 +70,7 @@ namespace Veterinary.PL.MedicationTreatment
             }
             else
             {
-                MessageBox.Show("List is Empty ");
+                MessageBox.Show("List est Vide ");
             }
 
             dtr = crud.list_medictreatment();
@@ -84,7 +84,7 @@ namespace Veterinary.PL.MedicationTreatment
             }
             else
             {
-                MessageBox.Show("List is Empty ");
+                MessageBox.Show("List est Vide ");
             }
         }
 
@@ -117,7 +117,7 @@ namespace Veterinary.PL.MedicationTreatment
                 else
                 {
                     // Client already selected, display a message or perform other actions
-                    MessageBox.Show("Medication allredy exist");
+                    MessageBox.Show("Ce médicament existe déjà");
                 }
                 DataGridViewMedications.SelectAll();
             }
@@ -163,7 +163,7 @@ namespace Veterinary.PL.MedicationTreatment
                 {
                     crud.insert_medictreatment(int.Parse(id_t.Text), medIds);
 
-                    MessageBox.Show("Insert complete");
+                    MessageBox.Show("Insertion complétée");
 
                     dtr = crud.list_medictreatment();
 
@@ -199,7 +199,7 @@ namespace Veterinary.PL.MedicationTreatment
                     {
                         crud.update_medictreatment(int.Parse(id_t.Text), medIds);
 
-                        MessageBox.Show("Updated Successfully !!! ");
+                        MessageBox.Show("Les informations ont été mises à jour avec succès !!! ");
 
 
                     }
@@ -218,10 +218,10 @@ namespace Veterinary.PL.MedicationTreatment
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to delete this Operation ?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Êtes-vous sûr(e) de vouloir supprimer cette opération ?", "Supprimé", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     crud.delete_medictreatment(int.Parse(id_t.Text));
-                    MessageBox.Show("Deleted Successfully !!!");
+                    MessageBox.Show("supprimé avec succès !!!");
                     dtr = crud.list_medictreatment();
                     DataGridViewResult.DataSource = dtr;
                 }
@@ -244,7 +244,7 @@ namespace Veterinary.PL.MedicationTreatment
         {
             if (DataGridViewResult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -257,7 +257,7 @@ namespace Veterinary.PL.MedicationTreatment
         {
             if (DataGridViewMedications.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -269,7 +269,7 @@ namespace Veterinary.PL.MedicationTreatment
         {
             if (DataGridViewTreatments.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

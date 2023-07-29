@@ -745,7 +745,7 @@
             this.SN.Padding = new System.Windows.Forms.Padding(2);
             this.SN.PasswordChar = '\0';
             this.SN.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.SN.PlaceholderText = "";
+            this.SN.PlaceholderText = "Procédure chirurgicale";
             this.SN.ReadOnly = false;
             this.SN.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.SN.SelectedText = "";
@@ -759,7 +759,7 @@
             this.SN.TextMarginBottom = 0;
             this.SN.TextMarginLeft = 3;
             this.SN.TextMarginTop = 0;
-            this.SN.TextPlaceholder = "";
+            this.SN.TextPlaceholder = "Procédure chirurgicale";
             this.SN.UseSystemPasswordChar = false;
             this.SN.WordWrap = true;
             // 

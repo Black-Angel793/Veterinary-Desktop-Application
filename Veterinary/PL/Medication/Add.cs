@@ -26,7 +26,7 @@ namespace Veterinary.PL.Medication
 
                 crud.insert_medication(MN.Text, des.Text, dosage.Text);
 
-                MessageBox.Show("Medication Added Successfully !!");
+                MessageBox.Show("Le médicament a été ajouté avec succès !!");
 
                 PL.Medication.List list = new PL.Medication.List();
                 list.Show();

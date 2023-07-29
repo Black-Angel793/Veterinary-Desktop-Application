@@ -96,7 +96,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Veterinary.Properties.Resources._3d_casual_life_credit_cards_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(995, 346);
+            this.pictureBox1.Location = new System.Drawing.Point(962, 346);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(164, 189);
@@ -303,7 +303,7 @@
             this.price.Padding = new System.Windows.Forms.Padding(2);
             this.price.PasswordChar = '\0';
             this.price.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.price.PlaceholderText = "Price $";
+            this.price.PlaceholderText = "Prixe $";
             this.price.ReadOnly = false;
             this.price.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.price.SelectedText = "";
@@ -317,7 +317,7 @@
             this.price.TextMarginBottom = 0;
             this.price.TextMarginLeft = 3;
             this.price.TextMarginTop = 0;
-            this.price.TextPlaceholder = "Price $";
+            this.price.TextPlaceholder = "Prixe $";
             this.price.UseSystemPasswordChar = false;
             this.price.WordWrap = true;
             // 
@@ -379,7 +379,7 @@
             this.pn.Padding = new System.Windows.Forms.Padding(2);
             this.pn.PasswordChar = '\0';
             this.pn.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.pn.PlaceholderText = "Product Name";
+            this.pn.PlaceholderText = "Nom du produit";
             this.pn.ReadOnly = false;
             this.pn.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.pn.SelectedText = "";
@@ -393,7 +393,7 @@
             this.pn.TextMarginBottom = 0;
             this.pn.TextMarginLeft = 3;
             this.pn.TextMarginTop = 0;
-            this.pn.TextPlaceholder = "Product Name";
+            this.pn.TextPlaceholder = "Nom du produit";
             this.pn.UseSystemPasswordChar = false;
             this.pn.WordWrap = true;
             // 
@@ -455,7 +455,7 @@
             this.qts.Padding = new System.Windows.Forms.Padding(2);
             this.qts.PasswordChar = '\0';
             this.qts.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.qts.PlaceholderText = "Quantity in Store";
+            this.qts.PlaceholderText = "Quantité en stock";
             this.qts.ReadOnly = false;
             this.qts.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.qts.SelectedText = "";
@@ -469,7 +469,7 @@
             this.qts.TextMarginBottom = 0;
             this.qts.TextMarginLeft = 3;
             this.qts.TextMarginTop = 0;
-            this.qts.TextPlaceholder = "Quantity in Store";
+            this.qts.TextPlaceholder = "Quantité en stock";
             this.qts.UseSystemPasswordChar = false;
             this.qts.WordWrap = true;
             // 
@@ -573,7 +573,7 @@
             this.bunifuLabel11.CursorType = null;
             this.bunifuLabel11.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel11.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel11.Location = new System.Drawing.Point(419, 27);
+            this.bunifuLabel11.Location = new System.Drawing.Point(402, 23);
             this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -588,7 +588,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1158, 534);
+            this.ClientSize = new System.Drawing.Size(1125, 534);
             this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.pictureBox3);

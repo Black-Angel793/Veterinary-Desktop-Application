@@ -32,8 +32,7 @@
             // 
             // UserControlblank
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "UserControlblank";

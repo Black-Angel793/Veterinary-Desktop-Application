@@ -35,7 +35,7 @@ namespace Veterinary.PL.Medication
             {
                 updt.update_medication(int.Parse(id.Text), MN.Text, des.Text,dosage.Text);
 
-                MessageBox.Show("Information Updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 Close();
             }
             catch (Exception ex)

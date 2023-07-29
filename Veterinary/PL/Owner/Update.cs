@@ -37,7 +37,7 @@ namespace Veterinary.PL.Owner
             {
                 updt.update_owner(int.Parse(id.Text), FN.Text, LN.Text,sex.Text, int.Parse(phone.Text), address.Text);
                
-                MessageBox.Show("Information has been updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 Close();
             }
             catch (Exception ex)

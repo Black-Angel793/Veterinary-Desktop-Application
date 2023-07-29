@@ -167,7 +167,7 @@
             this.price.Padding = new System.Windows.Forms.Padding(2);
             this.price.PasswordChar = '\0';
             this.price.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.price.PlaceholderText = "Price $";
+            this.price.PlaceholderText = "Prixe $";
             this.price.ReadOnly = false;
             this.price.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.price.SelectedText = "";
@@ -181,7 +181,7 @@
             this.price.TextMarginBottom = 0;
             this.price.TextMarginLeft = 3;
             this.price.TextMarginTop = 0;
-            this.price.TextPlaceholder = "Price $";
+            this.price.TextPlaceholder = "Prixe $";
             this.price.UseSystemPasswordChar = false;
             this.price.WordWrap = true;
             this.price.TextChanged += new System.EventHandler(this.id_c_TextChanged);
@@ -244,7 +244,7 @@
             this.pn.Padding = new System.Windows.Forms.Padding(2);
             this.pn.PasswordChar = '\0';
             this.pn.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.pn.PlaceholderText = "Product Name";
+            this.pn.PlaceholderText = "Nom du produit";
             this.pn.ReadOnly = false;
             this.pn.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.pn.SelectedText = "";
@@ -258,7 +258,7 @@
             this.pn.TextMarginBottom = 0;
             this.pn.TextMarginLeft = 3;
             this.pn.TextMarginTop = 0;
-            this.pn.TextPlaceholder = "Product Name";
+            this.pn.TextPlaceholder = "Nom du produit";
             this.pn.UseSystemPasswordChar = false;
             this.pn.WordWrap = true;
             // 
@@ -320,7 +320,7 @@
             this.qts.Padding = new System.Windows.Forms.Padding(2);
             this.qts.PasswordChar = '\0';
             this.qts.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.qts.PlaceholderText = "Quantity in Store";
+            this.qts.PlaceholderText = "Quantité en stock";
             this.qts.ReadOnly = false;
             this.qts.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.qts.SelectedText = "";
@@ -334,7 +334,7 @@
             this.qts.TextMarginBottom = 0;
             this.qts.TextMarginLeft = 3;
             this.qts.TextMarginTop = 0;
-            this.qts.TextPlaceholder = "Quantity in Store";
+            this.qts.TextPlaceholder = "Quantité en stock";
             this.qts.UseSystemPasswordChar = false;
             this.qts.WordWrap = true;
             // 

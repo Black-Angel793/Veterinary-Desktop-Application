@@ -46,14 +46,14 @@ namespace Veterinary.PL.Appointment
             }
             else
             {
-                MessageBox.Show("List is Empty...");
+                MessageBox.Show("List est Vide");
             }
         }
         private void updatebtn_Click(object sender, EventArgs e)
         {
             if (DGVappoint.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Please select one row ");
+                MessageBox.Show("Veuillez sélectionner une ligne ");
             }
             else
             {
@@ -74,7 +74,7 @@ namespace Veterinary.PL.Appointment
         {
             if (DGVappoint.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Pleas Select one row !!");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -96,7 +96,7 @@ namespace Veterinary.PL.Appointment
             }
             else
             {
-                MessageBox.Show("List is Empty ...");
+                MessageBox.Show("List est Vide");
             }
         }
 

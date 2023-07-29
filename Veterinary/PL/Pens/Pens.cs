@@ -52,8 +52,8 @@ namespace Veterinary.PL.Pens
                 DataGridViewPens.Columns[1].HeaderText = "Duration";
                 DataGridViewPens.Columns[2].HeaderText = "Start Date";
                 DataGridViewPens.Columns[3].HeaderText = "End Date";
-                DataGridViewPens.Columns[3].HeaderText = "Price by Day";
-                DataGridViewPens.Columns[3].HeaderText = "Animal";
+                DataGridViewPens.Columns[4].HeaderText = "Price by Day";
+                DataGridViewPens.Columns[5].HeaderText = "Animal";
             }
             else
             {
@@ -63,10 +63,13 @@ namespace Veterinary.PL.Pens
 
         private void addbtn_Click(object sender, EventArgs e)
         {
+            float cost = float.Parse(priced.Text) * int.Parse(dur.Text);
+            MessageBox.Show("Sa Coût : " + cost.ToString());
+
             try
             {
-                crud.insert_pens(int.Parse(dur.Text),sdate.Text,edate.Text,float.Parse(priced.Text),int.Parse(id_a.Text));
-                MessageBox.Show("Pens Added Successfully!!!");
+                crud.insert_pens(int.Parse(dur.Text),sdate.Text,edate.Text,cost,int.Parse(id_a.Text));
+                MessageBox.Show("gardiennage ajouté avec succès !!!");
                 dtp = crud.list_pens();
                 DataGridViewPens.DataSource = dtp;
             }
@@ -81,7 +84,7 @@ namespace Veterinary.PL.Pens
             try
             {
                 crud.update_pens(int.Parse(id_p.Text),int.Parse(dur.Text), sdate.Text, edate.Text, float.Parse(priced.Text), int.Parse(id_a.Text));
-                MessageBox.Show("Pens Updated Successfully!!!");
+                MessageBox.Show("gardiennage Mis à jour avec succès !!!");
                 dtp = crud.list_pens();
                 DataGridViewPens.DataSource = dtp;
             }
@@ -95,7 +98,7 @@ namespace Veterinary.PL.Pens
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to delete this pens ?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Êtes-vous sûr de vouloir supprimer ceci gardiennage ?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     crud.delete_pens(int.Parse(id_p.Text));
                     MessageBox.Show("Deleted Successfully !!!");

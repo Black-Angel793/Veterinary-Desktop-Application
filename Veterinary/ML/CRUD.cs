@@ -832,7 +832,7 @@ namespace Veterinary.ML
         public void insert_pens(int dur, string sd, string ed,float priced,int animal)
         {
             DAL.DAL insert = new DAL.DAL();
-            SqlParameter[] param = new SqlParameter[4];
+            SqlParameter[] param = new SqlParameter[5];
             param[0] = new SqlParameter("@dur", SqlDbType.Int);
             param[0].Value = dur;
             param[1] = new SqlParameter("@sd", SqlDbType.DateTime);

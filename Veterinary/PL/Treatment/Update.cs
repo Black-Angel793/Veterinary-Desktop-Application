@@ -30,7 +30,7 @@ namespace Veterinary.PL.Treatment
             }
             else
             {
-                MessageBox.Show("list vide");
+                MessageBox.Show("list est vide");
             }
 
             id.Text = List.id;
@@ -47,7 +47,7 @@ namespace Veterinary.PL.Treatment
             {
                 updt.update_treatment(int.Parse(id.Text), SDate.Text, EDate.Text,Inst.Text, Notes.Text, int.Parse(id_c.Text));
 
-                MessageBox.Show("Information Updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 Close();
             }
             catch (Exception ex)
@@ -67,7 +67,7 @@ namespace Veterinary.PL.Treatment
         {
             if (DataGridViewConsult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

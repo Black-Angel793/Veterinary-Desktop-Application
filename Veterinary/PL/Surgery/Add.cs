@@ -32,7 +32,7 @@ namespace Veterinary.PL.Surgery
             }
             else
             {
-                MessageBox.Show("list vide");
+                MessageBox.Show("list est vide");
             }
         }
 
@@ -42,7 +42,7 @@ namespace Veterinary.PL.Surgery
             {
                 crud.insert_surgery(SDate.Text, SN.Text,AT.Text,notes.Text,int.Parse(id_c.Text));
 
-                MessageBox.Show("Surgery Added Successfully !!");
+                MessageBox.Show("L'intervention chirurgicale a été ajoutée avec succès. !!");
 
                 PL.Surgery.List list = new PL.Surgery.List();
                 list.Show();
@@ -66,7 +66,7 @@ namespace Veterinary.PL.Surgery
         {
             if (DataGridViewconsult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

@@ -69,12 +69,27 @@ namespace Veterinary.PL.Animal
             string path = Path.Combine(location, AN.Text + ".jpg");
             try
             {
-                crud.update_animal(int.Parse(id.Text), AN.Text, Species.Text,
-                    breed.Text, DateTime.Parse(Birthdate.Text), sex.Text, color.Text, float.Parse(weight.Text), MC.Text,
+                crud.update_animal(int.Parse(id.Text), AN.Text, Species.Text,breed.Text, DateTime.Parse(Birthdate.Text), sex.Text, color.Text, float.Parse(weight.Text), MC.Text,
                     VS.Text, path, (int)owner.SelectedValue);
+
                 Image a = picture.Image;
-                a.Save(path);
-                MessageBox.Show("Information Updated successfully !!!");
+
+                if (a == null)
+                {
+                    path = null;
+                }
+                else
+                {
+                    try
+                    {
+                        a.Save(path);
+                    }
+                    catch
+                    {
+                        path = null;
+                    }
+                } 
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 this.Close();
             }
             catch (Exception ex)
@@ -116,25 +131,25 @@ namespace Veterinary.PL.Animal
             switch (selectedSpecies)
             {
                 case "Cat":
-                    breed.Items.AddRange(new string[] { "Siamese", "Maine Coon", "Persian", "Bengal", "British Shorthair", "Russian Blue", "Other" });
+                    breed.Items.AddRange(new string[] { "Siamois", "Maine Coon", "Persan", "Bengal", "British Shorthair", "Bleu Russe", "Autre" });
                     break;
                 case "Dog":
-                    breed.Items.AddRange(new string[] { "Labrador Retriever", "German Shepherd", "Golden Retriever", "Bulldog", "Rottweiler", "Siberian Husky", "Other" });
+                    breed.Items.AddRange(new string[] { "Labrador Retriever", "Berger Allemand", "Golden Retriever", "Bulldog", "Rottweiler", "Husky Siberien", "Autre" });
                     break;
                 case "Bird":
-                    breed.Items.AddRange(new string[] { "Parakeet", "Cockatiel", "Canary", "Chicken", "Duck", "Other" });
+                    breed.Items.AddRange(new string[] { "Perruche", "Calopsitte", "Canari", "Poulet", "Canard", "perroquet", "Autre" });
                     break;
                 case "Sheep":
-                    breed.Items.AddRange(new string[] { "Merino", "Suffolk", "Shropshire", "Other" });
+                    breed.Items.AddRange(new string[] { "Ouled Djellal", "D'men", "El Hamra", "Srandi", "Tazegrawet", "Autre" });
                     break;
                 case "Horse":
-                    breed.Items.AddRange(new string[] { "Arabian", "Friesian", "Andalusian", "American Paint Horse", "Thoroughbred", "Other" });
+                    breed.Items.AddRange(new string[] { "Arabe", "Frison", "Andalou", "American Paint Horse", "Autre" });
                     break;
                 case "Rabbit":
-                    breed.Items.AddRange(new string[] { "Holland Lop", "Netherland Dwarf", "Mini Rex", "Other" });
+                    breed.Items.AddRange(new string[] { "Bélier Hollandais", "Nain des Pays-Bas", "Mini-Rex", "Autre" });
                     break;
                 case "Hamster":
-                    breed.Items.AddRange(new string[] { "Hamster", "Guinea Pig", "Golden Hamster", "Other" });
+                    breed.Items.AddRange(new string[] { "Hamster", "Hamster doré", "Cochon d'Inde", "Autre" });
                     break;
                 default:
                     // Handle any other species or empty selection if needed

@@ -29,7 +29,7 @@ namespace Veterinary.PL.Store
             {
                 crud.insert_product(pn.Text, int.Parse(qts.Text), float.Parse(price.Text));
 
-                MessageBox.Show("Animal Added Successfully !!");
+                MessageBox.Show("Le produit a été ajouté avec succès !!");
 
                 PL.Store.List list = new PL.Store.List();
                 list.Show();

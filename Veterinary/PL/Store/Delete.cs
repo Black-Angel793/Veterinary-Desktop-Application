@@ -30,7 +30,7 @@ namespace Veterinary.PL.Store
             try
             {
                 del.delete_product(int.Parse(id.Text));
-                MessageBox.Show("deleted successfully !!");
+                MessageBox.Show("supprimé avec succès !!");
                 this.Close();
             }
             catch (Exception ex)

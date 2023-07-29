@@ -30,7 +30,7 @@ namespace Veterinary.PL.Treatment
             try
             {
                 del.delete_treatment(int.Parse(id.Text));
-                MessageBox.Show("deleted successfully !!");
+                MessageBox.Show("supprimé avec succès !!");
                 this.Close();
             }
             catch (Exception ex)

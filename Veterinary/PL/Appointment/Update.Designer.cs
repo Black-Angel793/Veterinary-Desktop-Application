@@ -128,7 +128,7 @@
             this.Updatebtn.IdleIconLeftImage = null;
             this.Updatebtn.IdleIconRightImage = null;
             this.Updatebtn.IndicateFocus = false;
-            this.Updatebtn.Location = new System.Drawing.Point(177, 475);
+            this.Updatebtn.Location = new System.Drawing.Point(180, 475);
             this.Updatebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Updatebtn.Name = "Updatebtn";
             this.Updatebtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -252,9 +252,9 @@
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(172, 27);
+            this.bunifuLabel6.Size = new System.Drawing.Size(385, 27);
             this.bunifuLabel6.TabIndex = 33;
-            this.bunifuLabel6.Text = "Appointment Date";
+            this.bunifuLabel6.Text = "Appointment Date ( Jour de Rendez-vous)";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -332,7 +332,7 @@
             this.Reason.Padding = new System.Windows.Forms.Padding(2);
             this.Reason.PasswordChar = '\0';
             this.Reason.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Reason.PlaceholderText = "Reason of appointment";
+            this.Reason.PlaceholderText = "Raison de rendez-vous";
             this.Reason.ReadOnly = false;
             this.Reason.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.Reason.SelectedText = "";
@@ -346,7 +346,7 @@
             this.Reason.TextMarginBottom = 0;
             this.Reason.TextMarginLeft = 3;
             this.Reason.TextMarginTop = 0;
-            this.Reason.TextPlaceholder = "Reason of appointment";
+            this.Reason.TextPlaceholder = "Raison de rendez-vous";
             this.Reason.UseSystemPasswordChar = false;
             this.Reason.WordWrap = true;
             // 
@@ -619,13 +619,13 @@
             this.bunifuLabel11.CursorType = null;
             this.bunifuLabel11.Font = new System.Drawing.Font("Britannic Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel11.Location = new System.Drawing.Point(467, 11);
+            this.bunifuLabel11.Location = new System.Drawing.Point(440, 11);
             this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(391, 48);
+            this.bunifuLabel11.Size = new System.Drawing.Size(457, 48);
             this.bunifuLabel11.TabIndex = 43;
-            this.bunifuLabel11.Text = "Update Appointment";
+            this.bunifuLabel11.Text = "Mise ajour Rendez-vous";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

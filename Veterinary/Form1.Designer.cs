@@ -477,7 +477,7 @@
             this.paymentbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_money_96;
             this.paymentbtn.IdleIconRightImage = null;
             this.paymentbtn.IndicateFocus = false;
-            this.paymentbtn.Location = new System.Drawing.Point(691, 77);
+            this.paymentbtn.Location = new System.Drawing.Point(714, 77);
             this.paymentbtn.Margin = new System.Windows.Forms.Padding(2);
             this.paymentbtn.Name = "paymentbtn";
             this.paymentbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -568,7 +568,7 @@
             this.storebtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_petshop_68;
             this.storebtn.IdleIconRightImage = null;
             this.storebtn.IndicateFocus = false;
-            this.storebtn.Location = new System.Drawing.Point(542, 77);
+            this.storebtn.Location = new System.Drawing.Point(565, 77);
             this.storebtn.Margin = new System.Windows.Forms.Padding(2);
             this.storebtn.Name = "storebtn";
             this.storebtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -683,7 +683,7 @@
             this.doctorname.BackColor = System.Drawing.Color.Transparent;
             this.doctorname.Font = new System.Drawing.Font("Calibri", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorname.ForeColor = System.Drawing.Color.White;
-            this.doctorname.Location = new System.Drawing.Point(83, 159);
+            this.doctorname.Location = new System.Drawing.Point(78, 159);
             this.doctorname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.doctorname.Name = "doctorname";
             this.doctorname.Size = new System.Drawing.Size(0, 49);
@@ -716,7 +716,7 @@
             this.pensbtn.BackColor1 = System.Drawing.Color.Transparent;
             this.pensbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pensbtn.BackgroundImage")));
             this.pensbtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.pensbtn.ButtonText = "Pens";
+            this.pensbtn.ButtonText = "Gardiennage";
             this.pensbtn.ButtonTextMarginLeft = 0;
             this.pensbtn.ColorContrastOnClick = 45;
             this.pensbtn.ColorContrastOnHover = 45;
@@ -749,7 +749,7 @@
             this.pensbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_pet_carrier_68;
             this.pensbtn.IdleIconRightImage = null;
             this.pensbtn.IndicateFocus = false;
-            this.pensbtn.Location = new System.Drawing.Point(393, 77);
+            this.pensbtn.Location = new System.Drawing.Point(348, 77);
             this.pensbtn.Margin = new System.Windows.Forms.Padding(2);
             this.pensbtn.Name = "pensbtn";
             this.pensbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -784,7 +784,7 @@
             this.pensbtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.pensbtn.OnPressedState.IconLeftImage = null;
             this.pensbtn.OnPressedState.IconRightImage = null;
-            this.pensbtn.Size = new System.Drawing.Size(145, 45);
+            this.pensbtn.Size = new System.Drawing.Size(213, 45);
             this.pensbtn.TabIndex = 0;
             this.pensbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.pensbtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -886,6 +886,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(632, 295);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -963,7 +964,7 @@
             this.ordersbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_order_64;
             this.ordersbtn.IdleIconRightImage = null;
             this.ordersbtn.IndicateFocus = false;
-            this.ordersbtn.Location = new System.Drawing.Point(869, 77);
+            this.ordersbtn.Location = new System.Drawing.Point(892, 77);
             this.ordersbtn.Margin = new System.Windows.Forms.Padding(2);
             this.ordersbtn.Name = "ordersbtn";
             this.ordersbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
@@ -1054,7 +1055,7 @@
             this.medbtn.IdleIconLeftImage = global::Veterinary.Properties.Resources.icons8_medication_64;
             this.medbtn.IdleIconRightImage = null;
             this.medbtn.IndicateFocus = false;
-            this.medbtn.Location = new System.Drawing.Point(1036, 77);
+            this.medbtn.Location = new System.Drawing.Point(1059, 77);
             this.medbtn.Margin = new System.Windows.Forms.Padding(2);
             this.medbtn.Name = "medbtn";
             this.medbtn.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;

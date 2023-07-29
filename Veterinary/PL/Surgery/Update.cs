@@ -34,7 +34,7 @@ namespace Veterinary.PL.Surgery
             {
                 updt.update_surgery(int.Parse(id.Text), SDate.Text,SN.Text,AT.Text,notes.Text, int.Parse(id_c.Text));
 
-                MessageBox.Show("Information Updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 Close();
             }
             catch (Exception ex)
@@ -54,7 +54,7 @@ namespace Veterinary.PL.Surgery
         {
             if (DataGridViewconsult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

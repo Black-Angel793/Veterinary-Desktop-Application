@@ -74,7 +74,7 @@ namespace Veterinary.PL.Purchase
             }
             else
             {
-                MessageBox.Show("List is Empty ");
+                MessageBox.Show("List est Vide ");
             }
 
             dtb = crud.list_orders();
@@ -94,7 +94,7 @@ namespace Veterinary.PL.Purchase
             }
             else
             {
-                MessageBox.Show("List is Empty ");
+                MessageBox.Show("List est Vide ");
             }
         }
 
@@ -128,13 +128,12 @@ namespace Veterinary.PL.Purchase
                 else
                 {
                     // Product already selected, display a message or perform other actions
-                    MessageBox.Show("Product already selected");
+                    MessageBox.Show("Ce produit est déjà sélectionné");
                 }
                 DataGridViewProducts.SelectAll();
             }
 
         }
-
         private void addproductbtn_Click(object sender, EventArgs e)
         {
             // Retrieve the selected product, quantity, and cost
@@ -186,8 +185,6 @@ namespace Veterinary.PL.Purchase
             price.Clear();
 
         }
-
-
         private void addbtn_Click(object sender, EventArgs e)
         {            
             foreach (DataGridViewRow row in DataGridViewProducts.Rows)
@@ -216,7 +213,7 @@ namespace Veterinary.PL.Purchase
                 {
                     crud.insert_order(int.Parse(id_c.Text),productIds, quantities,costs); 
                     
-                    MessageBox.Show("Order complete");
+                    MessageBox.Show("Commande complétée");
 
                     dtb = crud.list_orders();
                          
@@ -228,7 +225,6 @@ namespace Veterinary.PL.Purchase
                 }
             }
         }
-
         private void updatebtn_Click(object sender, EventArgs e)
         {
             if (DataGridViewResult.SelectedRows.Count > 0)
@@ -258,7 +254,7 @@ namespace Veterinary.PL.Purchase
                     {
                         crud.update_order(int.Parse(id_o.Text), productIds, quantities,costs);
 
-                        MessageBox.Show("Order Updated");
+                        MessageBox.Show("Commande mise à jour");
 
                        
                     }
@@ -272,15 +268,14 @@ namespace Veterinary.PL.Purchase
                 }
             }
         }
-
         private void deletebtn_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to delete this Order ?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Êtes-vous sûr(e) de vouloir supprimer cette commande ?", "Supprimé", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     crud.delete_order(int.Parse(id_o.Text));
-                    MessageBox.Show("Deleted Successfully !!!");
+                    MessageBox.Show("supprimé avec succès !!!");
                     dtb = crud.list_orders();
                     DataGridViewResult.DataSource = dtb;
                 }
@@ -291,19 +286,17 @@ namespace Veterinary.PL.Purchase
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void Return_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();
             form.Show();
             Close();
         }
-
         private void DataGridViewProducts_Click(object sender, EventArgs e)
         {
             if (DataGridViewProducts.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -314,24 +307,22 @@ namespace Veterinary.PL.Purchase
 
             }
         }
-
         private void DataGridViewClient_Click(object sender, EventArgs e)
         {
             if (DataGridViewClient.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
                 id_c.Text = DataGridViewClient.CurrentRow.Cells[0].Value.ToString();
             }
         }
-
         private void DataGridViewResult_Click(object sender, EventArgs e)
         {
             if (DataGridViewResult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

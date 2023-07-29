@@ -132,7 +132,7 @@
             this.updatebtn.IdleIconLeftImage = null;
             this.updatebtn.IdleIconRightImage = null;
             this.updatebtn.IndicateFocus = false;
-            this.updatebtn.Location = new System.Drawing.Point(650, 580);
+            this.updatebtn.Location = new System.Drawing.Point(752, 580);
             this.updatebtn.Margin = new System.Windows.Forms.Padding(2);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -167,7 +167,7 @@
             this.updatebtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.updatebtn.OnPressedState.IconLeftImage = null;
             this.updatebtn.OnPressedState.IconRightImage = null;
-            this.updatebtn.Size = new System.Drawing.Size(238, 63);
+            this.updatebtn.Size = new System.Drawing.Size(181, 63);
             this.updatebtn.TabIndex = 40;
             this.updatebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.updatebtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -182,10 +182,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Veterinary.Properties.Resources.female_veterinarian_with_dog_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(943, 532);
+            this.pictureBox1.Location = new System.Drawing.Point(1005, 532);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 222);
+            this.pictureBox1.Size = new System.Drawing.Size(245, 222);
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
@@ -286,13 +286,13 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel5.Location = new System.Drawing.Point(111, 537);
+            this.bunifuLabel5.Location = new System.Drawing.Point(112, 411);
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(87, 27);
+            this.bunifuLabel5.Size = new System.Drawing.Size(201, 27);
             this.bunifuLabel5.TabIndex = 35;
-            this.bunifuLabel5.Text = "Diagnosis";
+            this.bunifuLabel5.Text = "Diagnosis (Diagnostic)";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -340,7 +340,7 @@
             this.diagnosis.IconRight = null;
             this.diagnosis.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.diagnosis.Lines = new string[0];
-            this.diagnosis.Location = new System.Drawing.Point(104, 580);
+            this.diagnosis.Location = new System.Drawing.Point(105, 454);
             this.diagnosis.Margin = new System.Windows.Forms.Padding(2);
             this.diagnosis.MaxLength = 32767;
             this.diagnosis.MinimumSize = new System.Drawing.Size(1, 1);
@@ -370,7 +370,7 @@
             this.diagnosis.Padding = new System.Windows.Forms.Padding(2);
             this.diagnosis.PasswordChar = '\0';
             this.diagnosis.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.diagnosis.PlaceholderText = "Diagnosis";
+            this.diagnosis.PlaceholderText = "Analyse médicale";
             this.diagnosis.ReadOnly = false;
             this.diagnosis.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.diagnosis.SelectedText = "";
@@ -384,7 +384,7 @@
             this.diagnosis.TextMarginBottom = 0;
             this.diagnosis.TextMarginLeft = 3;
             this.diagnosis.TextMarginTop = 0;
-            this.diagnosis.TextPlaceholder = "Diagnosis";
+            this.diagnosis.TextPlaceholder = "Analyse médicale";
             this.diagnosis.UseSystemPasswordChar = false;
             this.diagnosis.WordWrap = true;
             // 
@@ -550,7 +550,7 @@
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel9.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel9.Location = new System.Drawing.Point(826, 90);
+            this.bunifuLabel9.Location = new System.Drawing.Point(807, 91);
             this.bunifuLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -697,7 +697,7 @@
             this.price.IconRight = null;
             this.price.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.price.Lines = new string[0];
-            this.price.Location = new System.Drawing.Point(104, 464);
+            this.price.Location = new System.Drawing.Point(105, 580);
             this.price.Margin = new System.Windows.Forms.Padding(2);
             this.price.MaxLength = 32767;
             this.price.MinimumSize = new System.Drawing.Size(1, 1);
@@ -727,7 +727,7 @@
             this.price.Padding = new System.Windows.Forms.Padding(2);
             this.price.PasswordChar = '\0';
             this.price.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.price.PlaceholderText = "Price $";
+            this.price.PlaceholderText = "Prixe $";
             this.price.ReadOnly = false;
             this.price.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.price.SelectedText = "";
@@ -741,7 +741,7 @@
             this.price.TextMarginBottom = 0;
             this.price.TextMarginLeft = 3;
             this.price.TextMarginTop = 0;
-            this.price.TextPlaceholder = "Price $";
+            this.price.TextPlaceholder = "Prixe $";
             this.price.UseSystemPasswordChar = false;
             this.price.WordWrap = true;
             // 
@@ -752,7 +752,7 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(111, 421);
+            this.bunifuLabel1.Location = new System.Drawing.Point(112, 537);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;

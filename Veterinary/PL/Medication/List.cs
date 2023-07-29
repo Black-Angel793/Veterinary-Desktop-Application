@@ -40,14 +40,14 @@ namespace Veterinary.PL.Medication
             }
             else
             {
-                MessageBox.Show("List is Empty...");
+                MessageBox.Show("List est Vide");
             }
         }
         private void updatebtn_Click(object sender, EventArgs e)
         {
             if (DGVMed.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Please select one row ");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -65,7 +65,7 @@ namespace Veterinary.PL.Medication
         {
             if (DGVMed.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Pleas Select one row !!");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
@@ -87,7 +87,7 @@ namespace Veterinary.PL.Medication
             }
             else
             {
-                MessageBox.Show("List is Empty ...");
+                MessageBox.Show("List est Vide");
             }
         }
 

@@ -357,9 +357,9 @@
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(84, 27);
+            this.bunifuLabel5.Size = new System.Drawing.Size(204, 27);
             this.bunifuLabel5.TabIndex = 72;
-            this.bunifuLabel5.Text = "End Date";
+            this.bunifuLabel5.Text = "End Date (Date de fin)";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -391,9 +391,9 @@
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(94, 27);
+            this.bunifuLabel6.Size = new System.Drawing.Size(245, 27);
             this.bunifuLabel6.TabIndex = 71;
-            this.bunifuLabel6.Text = "Start Date";
+            this.bunifuLabel6.Text = "Start Date (Date de début)";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

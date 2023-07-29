@@ -35,11 +35,11 @@
             // labeldays
             // 
             this.labeldays.AutoSize = true;
-            this.labeldays.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldays.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeldays.ForeColor = System.Drawing.Color.Black;
             this.labeldays.Location = new System.Drawing.Point(15, 18);
             this.labeldays.Name = "labeldays";
-            this.labeldays.Size = new System.Drawing.Size(36, 25);
+            this.labeldays.Size = new System.Drawing.Size(41, 30);
             this.labeldays.TabIndex = 0;
             this.labeldays.Text = "00";
             // 

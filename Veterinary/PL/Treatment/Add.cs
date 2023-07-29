@@ -32,7 +32,7 @@ namespace Veterinary.PL.Treatment
             }
             else
             {
-                MessageBox.Show("list vide");
+                MessageBox.Show("list est vide");
             }
         }
         private void Confirme_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Veterinary.PL.Treatment
             {
                 crud.insert_treatment(SDate.Text, EDate.Text, Inst.Text, Notes.Text,int.Parse(id_c.Text));
 
-                MessageBox.Show("Treatment Added Successfully !!");
+                MessageBox.Show("Le traitement a été ajouté avec succès !!");
 
                 PL.Treatment.List list = new PL.Treatment.List();
                 list.Show();
@@ -65,7 +65,7 @@ namespace Veterinary.PL.Treatment
         {
             if (DataGridViewConsult.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

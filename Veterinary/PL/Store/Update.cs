@@ -36,7 +36,7 @@ namespace Veterinary.PL.Store
             {
                 crud.update_product(int.Parse(idp.Text), pn.Text, int.Parse(qts.Text),float.Parse(price.Text));
 
-                MessageBox.Show("Information Updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 Close();
             }
             catch (Exception ex)

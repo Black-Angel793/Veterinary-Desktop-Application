@@ -232,9 +232,9 @@
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(172, 27);
+            this.bunifuLabel6.Size = new System.Drawing.Size(385, 27);
             this.bunifuLabel6.TabIndex = 17;
-            this.bunifuLabel6.Text = "Appointment Date";
+            this.bunifuLabel6.Text = "Appointment Date ( Jour de Rendez-vous)";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -312,7 +312,7 @@
             this.Reason.Padding = new System.Windows.Forms.Padding(2);
             this.Reason.PasswordChar = '\0';
             this.Reason.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Reason.PlaceholderText = "Reason of appointment";
+            this.Reason.PlaceholderText = "Raison du rendez-vous";
             this.Reason.ReadOnly = false;
             this.Reason.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.Reason.SelectedText = "";
@@ -326,7 +326,7 @@
             this.Reason.TextMarginBottom = 0;
             this.Reason.TextMarginLeft = 3;
             this.Reason.TextMarginTop = 0;
-            this.Reason.TextPlaceholder = "Reason of appointment";
+            this.Reason.TextPlaceholder = "Raison du rendez-vous";
             this.Reason.UseSystemPasswordChar = false;
             this.Reason.WordWrap = true;
             // 
@@ -510,9 +510,9 @@
             this.bunifuLabel11.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(328, 48);
+            this.bunifuLabel11.Size = new System.Drawing.Size(375, 48);
             this.bunifuLabel11.TabIndex = 40;
-            this.bunifuLabel11.Text = "add Appointment";
+            this.bunifuLabel11.Text = "Ajoute Rendez-vous";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

@@ -126,7 +126,7 @@
             this.Updatebtn.IdleIconLeftImage = null;
             this.Updatebtn.IdleIconRightImage = null;
             this.Updatebtn.IndicateFocus = false;
-            this.Updatebtn.Location = new System.Drawing.Point(490, 452);
+            this.Updatebtn.Location = new System.Drawing.Point(413, 405);
             this.Updatebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Updatebtn.Name = "Updatebtn";
             this.Updatebtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -161,7 +161,7 @@
             this.Updatebtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Updatebtn.OnPressedState.IconLeftImage = null;
             this.Updatebtn.OnPressedState.IconRightImage = null;
-            this.Updatebtn.Size = new System.Drawing.Size(238, 67);
+            this.Updatebtn.Size = new System.Drawing.Size(170, 67);
             this.Updatebtn.TabIndex = 54;
             this.Updatebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Updatebtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -176,7 +176,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Veterinary.Properties.Resources.white_blue_capsule;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(2, 484);
+            this.pictureBox3.Location = new System.Drawing.Point(2, 405);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(94, 123);
@@ -189,7 +189,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Veterinary.Properties.Resources.blue_pill_package;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1065, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(898, -1);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(150, 156);
@@ -202,7 +202,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Veterinary.Properties.Resources.green_pill_box;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1011, 452);
+            this.pictureBox1.Location = new System.Drawing.Point(844, 373);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(204, 156);
@@ -216,7 +216,7 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(811, 124);
+            this.bunifuLabel2.Location = new System.Drawing.Point(682, 124);
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -233,7 +233,7 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel3.Location = new System.Drawing.Point(454, 282);
+            this.bunifuLabel3.Location = new System.Drawing.Point(393, 267);
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -251,7 +251,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(454, 126);
+            this.bunifuLabel1.Location = new System.Drawing.Point(335, 126);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -288,7 +288,7 @@
             this.dosage.IconRight = null;
             this.dosage.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.dosage.Lines = new string[0];
-            this.dosage.Location = new System.Drawing.Point(454, 332);
+            this.dosage.Location = new System.Drawing.Point(393, 317);
             this.dosage.Margin = new System.Windows.Forms.Padding(2);
             this.dosage.MaxLength = 32767;
             this.dosage.MinimumSize = new System.Drawing.Size(1, 1);
@@ -325,7 +325,7 @@
             this.dosage.SelectionLength = 0;
             this.dosage.SelectionStart = 0;
             this.dosage.ShortcutsEnabled = true;
-            this.dosage.Size = new System.Drawing.Size(274, 63);
+            this.dosage.Size = new System.Drawing.Size(216, 63);
             this.dosage.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.dosage.TabIndex = 42;
             this.dosage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -363,7 +363,7 @@
             this.des.IconRight = null;
             this.des.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.des.Lines = new string[0];
-            this.des.Location = new System.Drawing.Point(811, 175);
+            this.des.Location = new System.Drawing.Point(682, 175);
             this.des.Margin = new System.Windows.Forms.Padding(2);
             this.des.MaxLength = 32767;
             this.des.MinimumSize = new System.Drawing.Size(1, 1);
@@ -438,7 +438,7 @@
             this.MN.IconRight = null;
             this.MN.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.MN.Lines = new string[0];
-            this.MN.Location = new System.Drawing.Point(454, 175);
+            this.MN.Location = new System.Drawing.Point(335, 175);
             this.MN.Margin = new System.Windows.Forms.Padding(2);
             this.MN.MaxLength = 32767;
             this.MN.MinimumSize = new System.Drawing.Size(1, 1);
@@ -551,7 +551,7 @@
             this.id.SelectionLength = 0;
             this.id.SelectionStart = 0;
             this.id.ShortcutsEnabled = true;
-            this.id.Size = new System.Drawing.Size(240, 63);
+            this.id.Size = new System.Drawing.Size(123, 63);
             this.id.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.id.TabIndex = 41;
             this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -602,7 +602,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Veterinary.Properties.Resources.background_3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1215, 608);
+            this.ClientSize = new System.Drawing.Size(1048, 529);
             this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.Updatebtn);

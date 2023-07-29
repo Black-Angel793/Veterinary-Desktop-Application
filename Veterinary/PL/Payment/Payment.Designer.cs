@@ -522,21 +522,21 @@
             this.amount.Padding = new System.Windows.Forms.Padding(2);
             this.amount.PasswordChar = '\0';
             this.amount.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.amount.PlaceholderText = "Payment Amount";
+            this.amount.PlaceholderText = "Montant du paiement";
             this.amount.ReadOnly = false;
             this.amount.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.amount.SelectedText = "";
             this.amount.SelectionLength = 0;
             this.amount.SelectionStart = 0;
             this.amount.ShortcutsEnabled = true;
-            this.amount.Size = new System.Drawing.Size(184, 63);
+            this.amount.Size = new System.Drawing.Size(218, 63);
             this.amount.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.amount.TabIndex = 29;
             this.amount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.amount.TextMarginBottom = 0;
             this.amount.TextMarginLeft = 3;
             this.amount.TextMarginTop = 0;
-            this.amount.TextPlaceholder = "Payment Amount";
+            this.amount.TextPlaceholder = "Montant du paiement";
             this.amount.UseSystemPasswordChar = false;
             this.amount.WordWrap = true;
             // 
@@ -622,9 +622,9 @@
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(56, 27);
+            this.bunifuLabel3.Size = new System.Drawing.Size(126, 27);
             this.bunifuLabel3.TabIndex = 33;
-            this.bunifuLabel3.Text = "Rest $";
+            this.bunifuLabel3.Text = "Rest (Reste $)";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -633,7 +633,7 @@
             this.Rest.AllowParentOverrides = false;
             this.Rest.AutoEllipsis = false;
             this.Rest.AutoSize = false;
-            this.Rest.BackColor = System.Drawing.Color.Gainsboro;
+            this.Rest.BackColor = System.Drawing.Color.Silver;
             this.Rest.CursorType = null;
             this.Rest.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rest.ForeColor = System.Drawing.Color.Lime;
@@ -641,7 +641,7 @@
             this.Rest.Margin = new System.Windows.Forms.Padding(2);
             this.Rest.Name = "Rest";
             this.Rest.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Rest.Size = new System.Drawing.Size(171, 63);
+            this.Rest.Size = new System.Drawing.Size(233, 63);
             this.Rest.TabIndex = 40;
             this.Rest.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.Rest.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;

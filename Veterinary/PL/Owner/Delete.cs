@@ -31,8 +31,8 @@ namespace Veterinary.PL.Owner
             try
             {
                 del.delete_owner(int.Parse(id.Text));
-                MessageBox.Show("deleted successfully !!");
-                this.Close();
+                MessageBox.Show("supprimé avec succès !!");
+                Close();
             }
             catch (Exception ex)
             {
@@ -42,7 +42,7 @@ namespace Veterinary.PL.Owner
 
         private void no_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

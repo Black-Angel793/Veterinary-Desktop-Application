@@ -46,7 +46,7 @@ namespace Veterinary.PL.Consultation
             {
                 updt.update_consultation(int.Parse(id.Text), ConDate.Text, diagnosis.Text,float.Parse(price.Text), int.Parse(id_a.Text),int.Parse(conType.Text));
 
-                MessageBox.Show("Information Updated successfully !!!");
+                MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 Close();
             }
             catch (Exception ex)
@@ -66,7 +66,7 @@ namespace Veterinary.PL.Consultation
         {
             if (DataGridViewAnimal.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

@@ -178,10 +178,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Veterinary.Properties.Resources.veterinarian_doctor_checking_dog_with_stethoscope;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1007, 532);
+            this.pictureBox2.Location = new System.Drawing.Point(966, 551);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(208, 207);
+            this.pictureBox2.Size = new System.Drawing.Size(249, 188);
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
             // 
@@ -252,9 +252,9 @@
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(118, 27);
+            this.bunifuLabel6.Size = new System.Drawing.Size(315, 27);
             this.bunifuLabel6.TabIndex = 33;
-            this.bunifuLabel6.Text = "Surgery Date";
+            this.bunifuLabel6.Text = "Surgery Date (Date de la chirurgie)";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -332,7 +332,7 @@
             this.SN.Padding = new System.Windows.Forms.Padding(2);
             this.SN.PasswordChar = '\0';
             this.SN.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.SN.PlaceholderText = "";
+            this.SN.PlaceholderText = "Procédure chirurgicale";
             this.SN.ReadOnly = false;
             this.SN.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.SN.SelectedText = "";
@@ -346,7 +346,7 @@
             this.SN.TextMarginBottom = 0;
             this.SN.TextMarginLeft = 3;
             this.SN.TextMarginTop = 0;
-            this.SN.TextPlaceholder = "";
+            this.SN.TextPlaceholder = "Procédure chirurgicale";
             this.SN.UseSystemPasswordChar = false;
             this.SN.WordWrap = true;
             // 
@@ -450,13 +450,13 @@
             this.bunifuLabel8.CursorType = null;
             this.bunifuLabel8.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel8.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel8.Location = new System.Drawing.Point(115, 193);
+            this.bunifuLabel8.Location = new System.Drawing.Point(105, 193);
             this.bunifuLabel8.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(150, 27);
+            this.bunifuLabel8.Size = new System.Drawing.Size(334, 27);
             this.bunifuLabel8.TabIndex = 31;
-            this.bunifuLabel8.Text = "Anesthesia Type";
+            this.bunifuLabel8.Text = "Anesthesia Type (Type d\'anesthésie)";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -635,7 +635,7 @@
             this.DataGridViewconsult.HeaderBackColor = System.Drawing.Color.Teal;
             this.DataGridViewconsult.HeaderBgColor = System.Drawing.Color.Empty;
             this.DataGridViewconsult.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridViewconsult.Location = new System.Drawing.Point(432, 240);
+            this.DataGridViewconsult.Location = new System.Drawing.Point(431, 259);
             this.DataGridViewconsult.Name = "DataGridViewconsult";
             this.DataGridViewconsult.RowHeadersVisible = false;
             this.DataGridViewconsult.RowHeadersWidth = 62;

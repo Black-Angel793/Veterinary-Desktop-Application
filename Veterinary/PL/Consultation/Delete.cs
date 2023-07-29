@@ -28,7 +28,7 @@ namespace Veterinary.PL.Consultation
             try
             {
                 del.delete_consultation(int.Parse(id.Text));
-                MessageBox.Show("deleted successfully !!");
+                MessageBox.Show("supprimé avec succès !!");
                 this.Close();
             }
             catch (Exception ex)

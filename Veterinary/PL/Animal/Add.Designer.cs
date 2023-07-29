@@ -339,9 +339,9 @@
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(66, 27);
+            this.bunifuLabel4.Size = new System.Drawing.Size(135, 27);
             this.bunifuLabel4.TabIndex = 16;
-            this.bunifuLabel4.Text = "Weight";
+            this.bunifuLabel4.Text = "Weight (Poids)";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -891,9 +891,9 @@
             this.bunifuLabel8.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(67, 27);
+            this.bunifuLabel8.Size = new System.Drawing.Size(149, 27);
             this.bunifuLabel8.TabIndex = 15;
-            this.bunifuLabel8.Text = "Species";
+            this.bunifuLabel8.Text = "Species (Espèce)";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -908,9 +908,9 @@
             this.bunifuLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(54, 27);
+            this.bunifuLabel9.Size = new System.Drawing.Size(116, 27);
             this.bunifuLabel9.TabIndex = 15;
-            this.bunifuLabel9.Text = "Breed";
+            this.bunifuLabel9.Text = "Breed (Race)";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

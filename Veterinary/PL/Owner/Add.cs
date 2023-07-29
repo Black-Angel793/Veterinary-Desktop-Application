@@ -28,7 +28,7 @@ namespace Veterinary.PL.Owner
 
                 crud.insert_owner(FN.Text, LN.Text, sex.Text,int.Parse(phone.Text),address.Text);
 
-                MessageBox.Show("Client Added Successfully !!");
+                MessageBox.Show("Le client a été ajouté avec succès. !!");
 
                 PL.Owner.List list = new PL.Owner.List();
                 list.Show();

@@ -31,7 +31,7 @@ namespace Veterinary.PL.Appointment
             try
             {
                 del.delete_appointment(int.Parse(id.Text));
-                MessageBox.Show("deleted successfully !!");
+                MessageBox.Show("supprimé avec succès !!");
                 this.Close();
             }
             catch (Exception ex)

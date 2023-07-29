@@ -47,7 +47,7 @@ namespace Veterinary.PL.Consultation
             }
             else
             {
-                MessageBox.Show("list vide");
+                MessageBox.Show("list est vide");
             }
 
             dt_ct = crud.list_consultType();
@@ -66,7 +66,7 @@ namespace Veterinary.PL.Consultation
 
                 crud.insert_consultation(ConDate.Text, diagnosis.Text,float.Parse(price.Text), int.Parse(id_a.Text),conType.SelectedIndex);
    
-                MessageBox.Show("Consultation Added Successfully !!");
+                MessageBox.Show("La consultation a été ajoutée avec succès!!");
 
                 PL.Consultation.List list = new PL.Consultation.List();
                 list.Show();
@@ -90,7 +90,7 @@ namespace Veterinary.PL.Consultation
         {
             if (DataGridViewAnimal.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {

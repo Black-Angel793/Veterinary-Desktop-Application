@@ -29,7 +29,7 @@ namespace Veterinary.PL.Animal
             try
             {
                 del.delete_animal(int.Parse(id.Text));
-                MessageBox.Show("deleted successfully !!");
+                MessageBox.Show("supprimé avec succès !!");
                 this.Close();
             }
             catch (Exception ex)

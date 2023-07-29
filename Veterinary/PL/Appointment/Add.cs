@@ -35,7 +35,7 @@ namespace Veterinary.PL.Appointment
             }
             else
             {
-                MessageBox.Show("list vide");
+                MessageBox.Show("list est vide");
             }
 
             ADate.Text = PL.Appointment.Home.sm + "/" + UserControlDays.sd + "/" + PL.Appointment.Home.sy;
@@ -47,7 +47,7 @@ namespace Veterinary.PL.Appointment
             {
                 crud.insert_appointment(ADate.Text, Reason.Text,int.Parse(id_c.Text));
 
-                MessageBox.Show("Appointment Added Successfully !!");
+                MessageBox.Show("Le rendez-vous a été ajouté avec succès !!");
 
                 PL.Appointment.Home list = new PL.Appointment.Home();
                 list.Show();
@@ -77,7 +77,7 @@ namespace Veterinary.PL.Appointment
         {
             if (DataGridView1.SelectedRows.Count > 1)
             {
-                MessageBox.Show("please select one row");
+                MessageBox.Show("Veuillez sélectionner une ligne");
             }
             else
             {
