@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace Veterinary.DAL
 {
@@ -13,9 +14,10 @@ namespace Veterinary.DAL
         SqlConnection sqlcon;
         public DAL()
         {
-            string serverName = Environment.MachineName;
-            string databaseName = "Veterinary";
-            string connectionString = $"Data Source={serverName}; Initial Catalog={databaseName}; Integrated Security=True";
+            //$"Data Source={serverName}; Initial Catalog={databaseName};User ID=madjda;Password=madjda; Integrated Security=True"
+            //string serverName =  "127.0.0.1,1433"; //Environment.MachineName
+            //string databaseName = "Veterinary";
+            string connectionString = Properties.Settings.Default.Connection;
 
             sqlcon = new SqlConnection(connectionString);
         }
