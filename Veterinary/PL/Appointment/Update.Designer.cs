@@ -45,6 +45,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.Return = new System.Windows.Forms.PictureBox();
             this.Updatebtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -61,6 +65,8 @@
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.id_c = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Note = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -128,7 +134,7 @@
             this.Updatebtn.IdleIconLeftImage = null;
             this.Updatebtn.IdleIconRightImage = null;
             this.Updatebtn.IndicateFocus = false;
-            this.Updatebtn.Location = new System.Drawing.Point(180, 475);
+            this.Updatebtn.Location = new System.Drawing.Point(506, 612);
             this.Updatebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Updatebtn.Name = "Updatebtn";
             this.Updatebtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -629,6 +635,98 @@
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // Note
+            // 
+            this.Note.AcceptsReturn = false;
+            this.Note.AcceptsTab = false;
+            this.Note.AnimationSpeed = 200;
+            this.Note.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Note.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Note.BackColor = System.Drawing.Color.Transparent;
+            this.Note.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Note.BackgroundImage")));
+            this.Note.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.Note.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Note.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Note.BorderColorIdle = System.Drawing.Color.Silver;
+            this.Note.BorderRadius = 30;
+            this.Note.BorderThickness = 1;
+            this.Note.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Note.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Note.DefaultFont = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Note.DefaultText = "";
+            this.Note.FillColor = System.Drawing.Color.White;
+            this.Note.HideSelection = true;
+            this.Note.IconLeft = null;
+            this.Note.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Note.IconPadding = 10;
+            this.Note.IconRight = null;
+            this.Note.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Note.Lines = new string[0];
+            this.Note.Location = new System.Drawing.Point(109, 490);
+            this.Note.Margin = new System.Windows.Forms.Padding(2);
+            this.Note.MaxLength = 32767;
+            this.Note.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Note.Modified = false;
+            this.Note.Multiline = false;
+            this.Note.Name = "Note";
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Note.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Note.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Note.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Note.OnIdleState = stateProperties16;
+            this.Note.Padding = new System.Windows.Forms.Padding(2);
+            this.Note.PasswordChar = '\0';
+            this.Note.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Note.PlaceholderText = "Note";
+            this.Note.ReadOnly = false;
+            this.Note.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Note.SelectedText = "";
+            this.Note.SelectionLength = 0;
+            this.Note.SelectionStart = 0;
+            this.Note.ShortcutsEnabled = true;
+            this.Note.Size = new System.Drawing.Size(372, 79);
+            this.Note.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.Note.TabIndex = 27;
+            this.Note.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Note.TextMarginBottom = 0;
+            this.Note.TextMarginLeft = 3;
+            this.Note.TextMarginTop = 0;
+            this.Note.TextPlaceholder = "Note";
+            this.Note.UseSystemPasswordChar = false;
+            this.Note.WordWrap = true;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel1.Location = new System.Drawing.Point(109, 452);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(54, 27);
+            this.bunifuLabel1.TabIndex = 32;
+            this.bunifuLabel1.Text = "Notes";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Update
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -646,8 +744,10 @@
             this.Controls.Add(this.ADate);
             this.Controls.Add(this.bunifuLabel7);
             this.Controls.Add(this.bunifuLabel6);
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.bunifuLabel5);
+            this.Controls.Add(this.Note);
             this.Controls.Add(this.Reason);
             this.Controls.Add(this.id_c);
             this.Controls.Add(this.id);
@@ -686,5 +786,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuTextBox id_c;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
+        private Bunifu.UI.WinForms.BunifuTextBox Note;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }

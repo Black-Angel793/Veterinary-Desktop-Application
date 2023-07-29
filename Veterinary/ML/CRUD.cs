@@ -369,7 +369,7 @@ namespace Veterinary.ML
             SqlParameter[] param = new SqlParameter[5];
             param[0] = new SqlParameter("@sd", SqlDbType.DateTime);
             param[0].Value = sd;
-            param[1] = new SqlParameter("@ed", SqlDbType.Time);
+            param[1] = new SqlParameter("@ed", SqlDbType.DateTime);
             param[1].Value = ed;
             param[2] = new SqlParameter("@inst", SqlDbType.VarChar, 1000);
             param[2].Value = inst;
@@ -389,7 +389,7 @@ namespace Veterinary.ML
             param[0].Value = id;
             param[1] = new SqlParameter("@sd", SqlDbType.DateTime);
             param[1].Value = sd;
-            param[2] = new SqlParameter("@ed", SqlDbType.Time);
+            param[2] = new SqlParameter("@ed", SqlDbType.DateTime);
             param[2].Value = ed;
             param[3] = new SqlParameter("@inst", SqlDbType.VarChar, 1000);
             param[3].Value = inst;
@@ -504,26 +504,28 @@ namespace Veterinary.ML
         }
 
         //Medication Treatment CRUD
-        public void insert_medictreatment(int idt, string idm)
+        public void insert_medictreatment(string idm,int idt)
         {
             DAL.DAL insert = new DAL.DAL();
             SqlParameter[] param = new SqlParameter[2];
-            param[0] = new SqlParameter("@TreatmentId", SqlDbType.Int);
-            param[0].Value = idt;
-            param[1] = new SqlParameter("@MedicationIds", SqlDbType.VarChar,50);
-            param[1].Value = idm;
+            param[0] = new SqlParameter("@MedicationIds", SqlDbType.VarChar, 50);
+            param[0].Value = idm;
+            param[1] = new SqlParameter("@TreatmentId", SqlDbType.Int);
+            param[1].Value = idt;
+
             insert.open();
             insert.execop("insert_medicationtreatment", param);
             insert.close();
         }
-        public void update_medictreatment(int idt, string idm)
+        public void update_medictreatment(string idm,int idt)
         {
             DAL.DAL update = new DAL.DAL();
             SqlParameter[] param = new SqlParameter[2];
-            param[0] = new SqlParameter("@TreatmentId", SqlDbType.Int);
-            param[0].Value = idt;
-            param[1] = new SqlParameter("@MedicationIds", SqlDbType.VarChar, 50);
-            param[1].Value = idm;
+            param[0] = new SqlParameter("@MedicationIds", SqlDbType.VarChar, 50);
+            param[0].Value = idm;
+            param[1] = new SqlParameter("@TreatmentId", SqlDbType.Int);
+            param[1].Value = idt;
+
             update.open();
             update.execop("update_medicationtreatment", param);
             update.close();
@@ -559,32 +561,36 @@ namespace Veterinary.ML
         }
 
         //Appointment CRUD
-        public void insert_appointment(string date, string r,int idc)
+        public void insert_appointment(string date, string r,string n,int idc)
         {
             DAL.DAL insert = new DAL.DAL();
-            SqlParameter[] param = new SqlParameter[3];
+            SqlParameter[] param = new SqlParameter[4];
             param[0] = new SqlParameter("@date", SqlDbType.DateTime);
             param[0].Value = date;
             param[1] = new SqlParameter("@r", SqlDbType.VarChar, 50);
             param[1].Value = r;
-            param[2] = new SqlParameter("@idc", SqlDbType.Int);
-            param[2].Value = idc;
+            param[2] = new SqlParameter("@n", SqlDbType.VarChar, 50);
+            param[2].Value = n;
+            param[3] = new SqlParameter("@idc", SqlDbType.Int);
+            param[3].Value = idc;
             insert.open();
             insert.execop("insert_appointment", param);
             insert.close();
         }
-        public void update_appointment(int id, string date, string r,int idc)
+        public void update_appointment(int id, string date, string r,string n,int idc)
         {
             DAL.DAL update = new DAL.DAL();
-            SqlParameter[] param = new SqlParameter[4];
-            param[0] = new SqlParameter("@id", SqlDbType.Int);
+            SqlParameter[] param = new SqlParameter[5];
+            param[0] = new SqlParameter("@ida", SqlDbType.Int);
             param[0].Value = id;
             param[1] = new SqlParameter("@date", SqlDbType.DateTime);
             param[1].Value = date;
             param[2] = new SqlParameter("@r", SqlDbType.VarChar, 50);
             param[2].Value = r;
-            param[3] = new SqlParameter("@idc", SqlDbType.Int);
-            param[3].Value = idc;
+            param[3] = new SqlParameter("@n", SqlDbType.VarChar, 50);
+            param[3].Value = n;
+            param[4] = new SqlParameter("@idc", SqlDbType.Int);
+            param[4].Value = idc;
             update.open();
             update.execop("update_appointment", param);
             update.close();

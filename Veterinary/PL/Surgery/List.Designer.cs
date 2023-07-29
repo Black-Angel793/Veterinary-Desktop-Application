@@ -449,8 +449,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.DGVsurgery.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVsurgery.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DGVsurgery.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVsurgery.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGVsurgery.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGVsurgery.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(153)))));
             this.DGVsurgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVsurgery.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

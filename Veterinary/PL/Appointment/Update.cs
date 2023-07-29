@@ -37,6 +37,7 @@ namespace Veterinary.PL.Appointment
             id.Text = List.id;
             ADate.Text = List.AD;
             Reason.Text = List.Res;
+            Note.Text = List.Not;
             id_c.Text = List.consult;
         }
 
@@ -44,7 +45,7 @@ namespace Veterinary.PL.Appointment
         {
             try
             {
-                updt.update_appointment(int.Parse(id.Text), ADate.Text,Reason.Text, int.Parse(id_c.Text));
+                updt.update_appointment(int.Parse(id.Text), ADate.Text,Reason.Text,Note.Text, int.Parse(id_c.Text));
 
                 MessageBox.Show("Les informations ont été mises à jour avec succès !!!");
                 this.Close();

@@ -128,7 +128,6 @@
             this.price.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.price.DefaultFont = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.price.DefaultText = "";
-            this.price.Enabled = false;
             this.price.FillColor = System.Drawing.Color.White;
             this.price.HideSelection = true;
             this.price.IconLeft = null;
@@ -205,7 +204,6 @@
             this.pn.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pn.DefaultFont = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pn.DefaultText = "";
-            this.pn.Enabled = false;
             this.pn.FillColor = System.Drawing.Color.White;
             this.pn.HideSelection = true;
             this.pn.IconLeft = null;
@@ -281,7 +279,6 @@
             this.qts.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.qts.DefaultFont = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qts.DefaultText = "";
-            this.qts.Enabled = false;
             this.qts.FillColor = System.Drawing.Color.White;
             this.qts.HideSelection = true;
             this.qts.IconLeft = null;

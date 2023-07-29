@@ -23,8 +23,6 @@ namespace Veterinary.PL.Appointment
 
         public static string id;
         public static string AD;
-        public static string ST;
-        public static string ET;
         public static string Res;
         public static string Not;
         public static string consult;
@@ -38,11 +36,9 @@ namespace Veterinary.PL.Appointment
                 //Datagridview Header 
                 DGVappoint.Columns[0].HeaderText = "Identification";
                 DGVappoint.Columns[1].HeaderText = "Appointment Date";
-                DGVappoint.Columns[2].HeaderText = "Start Time";
-                DGVappoint.Columns[3].HeaderText = "End Time";
-                DGVappoint.Columns[4].HeaderText = "Reason";
-                DGVappoint.Columns[5].HeaderText = "Notes";
-                DGVappoint.Columns[6].HeaderText = "Consultation ID";
+                DGVappoint.Columns[2].HeaderText = "Reason";
+                DGVappoint.Columns[3].HeaderText = "Notes";
+                DGVappoint.Columns[4].HeaderText = "Consultation ID";
             }
             else
             {
@@ -59,11 +55,9 @@ namespace Veterinary.PL.Appointment
             {
                 id = DGVappoint.CurrentRow.Cells[0].Value.ToString();
                 AD = DGVappoint.CurrentRow.Cells[1].Value.ToString();
-                ST = DGVappoint.CurrentRow.Cells[2].Value.ToString();
-                ET = DGVappoint.CurrentRow.Cells[3].Value.ToString();
-                Res = DGVappoint.CurrentRow.Cells[4].Value.ToString();
-                Not = DGVappoint.CurrentRow.Cells[5].Value.ToString();
-                consult = DGVappoint.CurrentRow.Cells[6].Value.ToString();
+                Res= DGVappoint.CurrentRow.Cells[2].Value.ToString();
+                Not= DGVappoint.CurrentRow.Cells[3].Value.ToString();
+                consult = DGVappoint.CurrentRow.Cells[4].Value.ToString();
 
                 PL.Appointment.Update u = new PL.Appointment.Update();
                 u.Show();
@@ -80,7 +74,7 @@ namespace Veterinary.PL.Appointment
             {
                 id = DGVappoint.CurrentRow.Cells[0].Value.ToString();
                 AD = DGVappoint.CurrentRow.Cells[1].Value.ToString();
-                consult = DGVappoint.CurrentRow.Cells[6].Value.ToString();
+                consult = DGVappoint.CurrentRow.Cells[4].Value.ToString();
 
                 PL.Appointment.Delete u = new PL.Appointment.Delete();
                 u.Show();

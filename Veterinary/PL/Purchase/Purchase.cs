@@ -69,8 +69,8 @@ namespace Veterinary.PL.Purchase
                 DataGridViewClient.Columns[0].HeaderText = "Identification";
                 DataGridViewClient.Columns[1].HeaderText = "First Name";
                 DataGridViewClient.Columns[2].HeaderText = "Last Name";
-                DataGridViewClient.Columns[5].HeaderText = "Address";
-                DataGridViewClient.Columns[6].HeaderText = "Phone Number";
+                DataGridViewClient.Columns[3].HeaderText = "Address";
+                DataGridViewClient.Columns[4].HeaderText = "Phone Number";
             }
             else
             {
